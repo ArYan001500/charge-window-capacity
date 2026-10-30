@@ -1,7 +1,6 @@
-# Reading Lithium-Ion Battery Capacity from 10-Minute Charging Windows
+# Soft Sensing of Lithium-Ion Battery Capacity from 10-Minute Charging Windows
 
-Code and results for the paper *Reading lithium-ion battery capacity from 10-minute charging windows under unseen usage
-with a bias-aware soft sensor and shift-robust uncertainty*. A ridge model estimates the capacity of the next reference
+Code and results for the paper *Soft sensing of lithium-ion battery capacity from 10-minute charging windows under unseen usage*. A ridge model estimates the capacity of the next reference
 test from 600 s of an ordinary charge, without a known starting state of charge or a fixed voltage window. A Kalman filter
 with a per-cell bias state fuses these estimates with occasional reference tests, and a group-max interval rule is
 calibrated on the worst training usage group. All models are tested on whole usage groups that were not used for
@@ -92,11 +91,11 @@ and the half-cell curves of C74 (`c74_export_ocp.py`, needs PyBaMM).
 - `chargewin/steps/`: one script per protocol; each reads the run folder (`data/`, `tables/`, `results/`).
 - `chargewin/figures/`: the figure scripts.
 - `chargewin/`: the runner, data download and checks, and the number check.
-- `paper/`: the result files of the paper (no raw data).
+- `paper/`: the result files of the paper and the 791-byte UConn group table used by Figure 2 (no other raw data).
 - `expected/`: reference values of the quick tier.
 - `matlab/`: numeric export of the raw CALCE files.
 - `tests/`: checks of the step list, the data manifest and the paper numbers.
 
 ## License
 
-Code: MIT (see `LICENSE`). Data: from the sources above under their own terms; no raw data are included here.
+Code: MIT (see `LICENSE`). Data: from the sources above under their own terms; apart from the UConn group table (CC BY 4.0), no raw data are included here.

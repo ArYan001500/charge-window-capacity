@@ -55,7 +55,7 @@ for j, ds in enumerate(("UConn", "HUST", "KIT")):
     if j == 0:
         first = ax
 h = [Line2D([], [], marker="o", ls="", mfc="white", mec=BASE, ms=4.5, label="pooled quantile (rule A)"),
-     Line2D([], [], marker="o", ls="", color=BLUE, ms=4.5, label="shift-robust, Eq. (5), strictly nested")]
+     Line2D([], [], marker="o", ls="", color=BLUE, ms=4.5, label="group-max, Eq. (5), strictly nested")]
 fig.legend(handles=h, loc="lower left", bbox_to_anchor=(first.get_position().x0 - 0.01, -0.06), ncol=2, fontsize=6.3,
            handletextpad=0.2)
 
