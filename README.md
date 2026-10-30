@@ -23,12 +23,16 @@ python -m chargewin reproduce --tier quick
 
 | Tier | What it does | Run time | Download |
 |---|---|---|---|
-| `paper` | Checks 79 numbers printed in the paper against the result files in `paper/` and redraws Figures 1 to 7 | about 1 min | none |
+| `paper` | Checks 117 numbers printed in the paper against the result files in `paper/` and redraws Figures 1 to 7 | about 1 min | none |
 | `quick` | Downloads 14 HUST cells, runs the window sensor (C14) and the HUST filter (C54), compares with `expected/quick.json` | about 10 min | 0.22 GB |
 | `main` | All results of Sections 6.1 to 6.4 and Table A.3 from the raw data; each result folder is compared with `paper/` | 3 to 5 h (estimate) | 16.3 GB |
 | `full` | `main` plus the neural-network comparisons, the studies of Appendix C and the CALCE illustration | 6 to 10 h (estimate) | 16.5 GB |
 
+The `main` and `full` tiers also need PyTorch (small perceptrons in C86 and C87, networks in the `full` tier). The CPU
+build is enough and avoids several GB of GPU libraries:
+
 ```console
+python -m pip install -r requirements-nn.txt --index-url https://download.pytorch.org/whl/cpu
 python -m chargewin reproduce --tier main --data-dir ./data
 python -m chargewin reproduce --tier full --data-dir ./data
 pytest -q
@@ -69,11 +73,11 @@ result file it comes from.
 | Paper | Protocols |
 |---|---|
 | Window sensor and Eq. (2), Section 6.1, Table 3 | C11 (UConn), C14 (HUST), C31 (KIT) |
-| Integral and curvature descriptors | C61, C62 |
-| Adapted competitors, Section 6.2, Table B.1 | C78, C79, C87, C55, C85, C98 |
-| Fusion with sparse tests, Section 6.3 | C91 (UConn), C93 (KIT, HUST), C54, C95, C102 |
+| Integral and curvature descriptors | C61, C61b, C62 |
+| Adapted competitors, Section 6.2, Table B.1 | C78, C78b, C79, C87, C55, C85, C98 |
+| Fusion with sparse tests, Section 6.3 | C91 (UConn), C93 (KIT, HUST), C54, C95, C102, C103 (own-rate baseline) |
 | Intervals under shift, Section 6.4 | C90, C92, C99, C101 |
-| Robustness analyses, Table A.3 | C96 to C102 |
+| Robustness analyses, Table A.3 | C96 to C104 |
 | Negative results, Appendix C | C57, C60, C65, C67 to C70, C72, C74, C75, C80 |
 
 Earlier implementations that the paper reports as superseded (C24, C25, C32, C56) are kept and run in the `full` tier.

@@ -9,6 +9,7 @@ from fig_style import (BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, VIOLET, YELLOW
 c78 = json.load(open(RES / "C78_TIM_COMPETITORS_2026-10-28_v1/summary.json"))
 c79 = json.load(open(RES / "C79_EXACT_ARCH_2026-10-28_v1/summary.json"))
 c55 = json.load(open(RES / "C55_KIT_TAOSEE_BASELINE_2026-10-24_v1/summary.json"))
+c78b = json.load(open(RES / "C78b_CONSTANT_CURRENT_WINDOWS_2026-10-31_v1/summary.json"))
 
 rows, heads = [], []
 
@@ -30,8 +31,10 @@ for seg, name in (("LOW", "low"), ("MID", "mid-curve"), ("HIGH", "high")):
     add(f"{name} · Guo calibration lookup", s["ours_F0F1"], s["guo"], s["ours_minus_guo_CI95"], ORANGE, "o")
     add(f"{name} · Guo IDATL-GRU", x["ours_F0F1"], x["guo_exact"], x["ours_minus_guo_CI95"], ORANGE, "s")
 heads.append(("Post hoc: constant-current windows only", len(rows)))
-add("UConn (11% of windows) · Guo lookup", 0.211, 0.109, [0.080, 0.121], ORANGE, "o", False)
-add("KIT (99.6% of windows) · Guo lookup", 0.101, 0.205, [-0.118, -0.091], ORANGE, "o", False)
+for ds in ("UConn", "KIT"):
+    x = c78b[ds]
+    add(f"{ds} ({x['share']:.{0 if ds == 'UConn' else 1}%} of windows) · Guo lookup", x["ours"], x["guo"],
+        x["ours_minus_guo_CI95"], ORANGE, "o", False)
 
 fig = plt.figure(figsize=(7.4, 4.6))
 gs = fig.add_gridspec(2, 2, width_ratios=[1.32, 1], height_ratios=[1, 1], hspace=0.75, wspace=0.36)
@@ -101,13 +104,13 @@ cases = [("KIT", k, c85[k]["reproduced"]["TS_mlp"], c85[k]["reproduced"]["MW_qua
 for ds, key in (("UConn", "UConn"), ("HUST masked", "HUST_masked")):
     w = c87[key]["primary"]
     r = c87[key][w]
-    cases.append((ds, w, r["TS_mlp"], r["MW_quad"], r["coverage"], r["ours_minus_TS_mlp"]["CI95"], "pre-registered"))
+    cases.append((ds, w, r["TS_mlp"], r["MW_quad"], r["coverage"], r["ours_minus_TS_mlp"]["CI95"], "pre-specified"))
 x = np.arange(len(cases))
 for i, (ds, w, ts, ours, cov, ci, status) in enumerate(cases):
     ax.bar(i - 0.19, ts, width=0.36, color=YELLOW, zorder=2, lw=0, label="Tao & See Q–V window (MLP)" if i == 0 else None)
     ax.bar(i + 0.19, ours, width=0.36, color=BLUE, zorder=2, lw=0, label="Ours, same windows" if i == 0 else None)
     verdict = "ours better" if ci[1] < 0 else ("theirs better" if ci[0] > 0 else "n.s.")
-    ax.text(i, max(ts, ours) + 0.012, verdict + "\n" + f"{cov:.0%} of windows", ha="center", va="bottom",
+    ax.text(i, max(ts, ours) + 0.012, verdict + "\n" + f"range: {cov:.0%} of windows", ha="center", va="bottom",
             fontsize=5.6, color=INK if verdict != "n.s." else MUTED, linespacing=1.05)
 ax.set_xticks(x)
 ax.set_xticklabels([c[0] + "\n" + c[1].replace("-", "–").replace("V", " V") + "\n" + f"({c[6]})" for c in cases],

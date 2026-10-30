@@ -1,0 +1,138 @@
+{
+  "UConn: window sensor vs training mean": {
+    "wins": "11/11",
+    "p": 0.0005
+  },
+  "UConn: Eq. (2) vs reference + drift": {
+    "wins": "8/11",
+    "p": 0.1133
+  },
+  "HUST masked: window sensor vs training mean": {
+    "wins": "7/7",
+    "p": 0.0078
+  },
+  "HUST masked: Eq. (2) vs reference + drift": {
+    "wins": "7/7",
+    "p": 0.0078
+  },
+  "KIT: window sensor vs training mean": {
+    "wins": "13/13",
+    "p": 0.0001
+  },
+  "KIT: Eq. (2) vs reference + drift": {
+    "wins": "10/13",
+    "p": 0.0461
+  },
+  "KIT with temperature: window sensor vs training mean": {
+    "wins": "12/13",
+    "p": 0.0017
+  },
+  "UConn T=7: bias-aware filter vs population-rate propagation": {
+    "wins": "6/11",
+    "p": 0.5
+  },
+  "UConn T=7: bias-aware filter vs own-rate propagation": {
+    "wins": "6/11",
+    "p": 0.5
+  },
+  "UConn T=14: bias-aware filter vs population-rate propagation": {
+    "wins": "9/11",
+    "p": 0.0327
+  },
+  "UConn T=14: bias-aware filter vs own-rate propagation": {
+    "wins": "6/11",
+    "p": 0.5
+  },
+  "UConn T=28: bias-aware filter vs population-rate propagation": {
+    "wins": "9/11",
+    "p": 0.0327
+  },
+  "UConn T=28: bias-aware filter vs own-rate propagation": {
+    "wins": "9/11",
+    "p": 0.0327
+  },
+  "UConn T=56: bias-aware filter vs population-rate propagation": {
+    "wins": "9/11",
+    "p": 0.0327
+  },
+  "UConn T=56: bias-aware filter vs own-rate propagation": {
+    "wins": "9/11",
+    "p": 0.0327
+  },
+  "UConn measured test T=56: bias-aware filter vs propagation": {
+    "wins": "10/11",
+    "p": 0.0059
+  },
+  "HUST_fixed k=1: bias-aware filter vs population-rate propagation": {
+    "wins": "6/7",
+    "p": 0.0625
+  },
+  "HUST_fixed k=1: bias-aware filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_fixed k=1: own-rate filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_fixed k=2: bias-aware filter vs population-rate propagation": {
+    "wins": "7/7",
+    "p": 0.0078
+  },
+  "HUST_fixed k=2: bias-aware filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_fixed k=2: own-rate filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_random k=1: bias-aware filter vs population-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_random k=1: bias-aware filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_random k=1: own-rate filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_random k=2: bias-aware filter vs population-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_random k=2: bias-aware filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "HUST_random k=2: own-rate filter vs own-rate propagation": {
+    "wins": "0/7",
+    "p": 1.0
+  },
+  "KIT k=1: bias-aware filter vs population-rate propagation": {
+    "wins": "13/13",
+    "p": 0.0001
+  },
+  "KIT k=1: bias-aware filter vs own-rate propagation": {
+    "wins": "7/13",
+    "p": 0.5
+  },
+  "KIT k=1: own-rate filter vs own-rate propagation": {
+    "wins": "9/13",
+    "p": 0.1334
+  },
+  "KIT k=2: bias-aware filter vs population-rate propagation": {
+    "wins": "13/13",
+    "p": 0.0001
+  },
+  "KIT k=2: bias-aware filter vs own-rate propagation": {
+    "wins": "10/13",
+    "p": 0.0461
+  },
+  "KIT k=2: own-rate filter vs own-rate propagation": {
+    "wins": "10/13",
+    "p": 0.0461
+  }
+}

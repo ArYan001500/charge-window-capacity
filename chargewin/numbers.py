@@ -16,6 +16,15 @@ C96 = "results/C96_ALL_WINDOW_LAG_2026-10-30_v1/summary.json"
 C101 = "results/C101_R4_INTERVAL_DIAG_2026-10-30_v1/summary.json"
 C101cd = "results/C101cd_R4_ERRORS_RHO_2026-10-30_v1/summary.json"
 C102 = "results/C102_UCONN_MEASURED_TEST_FUSION_2026-10-30_v1/summary.json"
+C103 = "results/C103_UCONN_OWN_RATE_2026-10-31_v1/summary.json"
+C103b = "results/C103b_KIT_HUST_OWN_RATE_2026-10-31_v1/summary.json"
+C104 = "results/C104_GROUP_SIGN_TESTS_2026-10-31_v1/summary.json"
+C78b = "results/C78b_CONSTANT_CURRENT_WINDOWS_2026-10-31_v1/summary.json"
+C61b = "results/C61b_SEGMENT_CIS_2026-10-31_v1/summary.json"
+C96U = "results/C96_ALL_WINDOW_LAG_2026-10-30_v1/summary.json"
+C57 = "results/C57_KF_INTERVALS_2026-10-24_v1/summary.json"
+C75 = "results/C75_CONSTRAINED_2E_2026-10-24_v1/summary.json"
+C06 = "results/C06_CALCE_GENUINE_PARTIAL_2026-10-22_w1800/summary.json"
 
 # (where in the paper, value as printed, file, path inside the JSON)
 PAPER = [
@@ -48,13 +57,13 @@ PAPER = [
     ("6.3: UConn propagation, T = 7 d (Ah)", "0.050", C91, "causal_nested_T7/ref_drift"),
     ("6.3: UConn propagation, T = 14 d (Ah)", "0.061", C91, "causal_nested_T14/ref_drift"),
     ("6.3: UConn propagation, T = 28 d (Ah)", "0.080", C91, "causal_nested_T28/ref_drift"),
-    ("6.3, abstract: UConn propagation, T = 56 d (Ah)", "0.109", C91, "causal_nested_T56/ref_drift"),
+    ("6.3: UConn propagation, T = 56 d (Ah)", "0.109", C91, "causal_nested_T56/ref_drift"),
     ("6.3: UConn scalar filter, T = 7 d (Ah)", "0.068", C91, "causal_nested_T7/kf_scalar"),
     ("6.3: UConn scalar filter, T = 14 d (Ah)", "0.074", C91, "causal_nested_T14/kf_scalar"),
     ("6.3: UConn bias-aware filter, T = 7 d (Ah)", "0.046", C91, "causal_nested_T7/kf_bias"),
     ("6.3: UConn bias-aware filter, T = 14 d (Ah)", "0.054", C91, "causal_nested_T14/kf_bias"),
     ("6.3: UConn bias-aware filter, T = 28 d (Ah)", "0.061", C91, "causal_nested_T28/kf_bias"),
-    ("6.3, abstract: UConn bias-aware filter, T = 56 d (Ah)", "0.062", C91, "causal_nested_T56/kf_bias"),
+    ("6.3: UConn bias-aware filter, T = 56 d (Ah)", "0.062", C91, "causal_nested_T56/kf_bias"),
     ("6.3: groups better than propagation, T = 7 d", "6", C91, "causal_nested_T7/bias_beats_ref_groups"),
     ("6.3: groups better than propagation, T = 56 d", "9", C91, "causal_nested_T56/bias_beats_ref_groups"),
     ("6.3: measured test, propagation, T = 56 d (Ah)", "0.105", C102, "measured_T56/ref_drift"),
@@ -66,18 +75,15 @@ PAPER = [
     ("6.4: rule A mean coverage, UConn", "0.919", C92, "nested/A/UConn/mean_cov"),
     ("6.4: rule A mean coverage, HUST", "0.902", C92, "nested/A/HUST/mean_cov"),
     ("6.4: rule A mean coverage, KIT", "0.842", C92, "nested/A/KIT/mean_cov"),
-    ("6.4, abstract: rule A worst group, UConn", "0.709", C92, "nested/A/UConn/min_cov"),
-    ("6.4, abstract: rule A worst group, KIT", "0.291", C92, "nested/A/KIT/min_cov"),
+    ("6.4: rule A worst group, UConn", "0.709", C92, "nested/A/UConn/min_cov"),
+    ("6.4: rule A worst group, KIT", "0.291", C92, "nested/A/KIT/min_cov"),
     ("6.4: rule A worst group, HUST", "0.881", C92, "nested/A/HUST/min_cov"),
-    ("6.4, abstract: rule D worst group, UConn", "0.797", C92, "nested/D/UConn/min_cov"),
+    ("6.4: rule D worst group, UConn", "0.797", C92, "nested/D/UConn/min_cov"),
     ("6.4: rule D worst group, HUST", "0.873", C92, "nested/D/HUST/min_cov"),
-    ("6.4, abstract: rule D worst group, KIT", "0.825", C92, "nested/D/KIT/min_cov"),
+    ("6.4: rule D worst group, KIT", "0.825", C92, "nested/D/KIT/min_cov"),
     ("6.4: rule D mean coverage, UConn", "0.969", C92, "nested/D/UConn/mean_cov"),
     ("6.4: rule D mean coverage, HUST", "0.906", C92, "nested/D/HUST/mean_cov"),
     ("6.4: rule D mean coverage, KIT", "0.973", C92, "nested/D/KIT/mean_cov"),
-    ("6.4: rule D per-cell worst group, UConn", "0.801", C92, "nested/D/UConn/min_cell_cov"),
-    ("6.4: rule D per-cell worst group, HUST", "0.877", C92, "nested/D/HUST/min_cell_cov"),
-    ("6.4: rule D per-cell worst group, KIT", "0.857", C92, "nested/D/KIT/min_cell_cov"),
     ("6.4: rule D mean width, UConn (Ah)", "0.67", C92, "nested/D/UConn/mean_width_Ah"),
     ("6.4: rule D mean width, HUST (Ah)", "0.21", C92, "nested/D/HUST/mean_width_Ah"),
     ("6.4: rule D mean width, KIT (Ah)", "0.81", C92, "nested/D/KIT/mean_width_Ah"),
@@ -98,6 +104,56 @@ PAPER = [
     ("Table A.3: KIT all windows (Ah)", "0.132", C96, "KIT/Q/table[1]/sensor_MAE"),
     ("6.1: KIT within 4 days of the next check-up (Ah)", "0.099", C96, "KIT/Q/table[2]/sensor_MAE"),
     ("6.1: KIT at 14-28 days (Ah)", "0.179", C96, "KIT/Q/table[5]/sensor_MAE"),
+    ("6.1: UConn all windows (Ah)", "0.097", C96U, "UConn/Q/table[1]/sensor_MAE"),
+    ("6.1: UConn all windows, groups below the mean", "10", C96U, "UConn/Q/table[1]/groups_sensor_beats_M0"),
+    ("6.4: rule B worst group, UConn", "0.792", C92, "nested/B/UConn/min_cov"),
+    ("6.4: rule B worst group, HUST", "0.887", C92, "nested/B/HUST/min_cov"),
+    ("6.4: rule B worst group, KIT", "0.843", C92, "nested/B/KIT/min_cov"),
+    ("6.4: rule B width, UConn (%)", "44", C92, "nested/B/UConn/mean_width_pct"),
+    ("6.3: UConn own-rate propagation, T = 7 d (Ah)", "0.070", C103, "T7/own_ref"),
+    ("6.3: UConn own-rate propagation, T = 14 d (Ah)", "0.057", C103, "T14/own_ref"),
+    ("6.3: UConn own-rate propagation, T = 28 d (Ah)", "0.074", C103, "T28/own_ref"),
+    ("6.3: UConn own-rate propagation, T = 56 d (Ah)", "0.090", C103, "T56/own_ref"),
+    ("6.3: UConn filter vs own rate, T = 56 d, CI lower", "-0.032", C103, "T56/ci_kf_bias_minus_own_ref[0]"),
+    ("6.3: UConn filter vs own rate, T = 56 d, CI upper", "-0.023", C103, "T56/ci_kf_bias_minus_own_ref[1]"),
+    ("6.3: UConn filter better than own rate, T = 56 d", "9", C103, "T56/kf_bias_beats_own_ref_groups"),
+    ("6.3: KIT own-rate propagation, every check-up (Ah)", "0.099", C103b, "KIT_k1/own_ref"),
+    ("6.3: KIT own-rate propagation, every 2nd check-up (Ah)", "0.139", C103b, "KIT_k2/own_ref"),
+    ("Table A.3: KIT own-rate filter, every check-up (Ah)", "0.081", C103b, "KIT_k1/own_kf"),
+    ("Table A.3: KIT own-rate filter, every 2nd check-up (Ah)", "0.091", C103b, "KIT_k2/own_kf"),
+    ("6.3: HUST own-rate propagation (Ah)", "0.0004", C103b, "HUST_fixed_k1/own_ref"),
+    ("5.2: sign test, UConn Eq. (2)", "0.11", C104, "UConn: Eq. (2) vs reference + drift/p"),
+    ("6.3: sign test, UConn fusion, T = 7 d", "0.50", C104, "UConn T=7: bias-aware filter vs population-rate propagation/p"),
+    ("6.3: sign test, UConn fusion, T = 56 d", "0.03", C104, "UConn T=56: bias-aware filter vs population-rate propagation/p"),
+    ("Table A.3: sign test, KIT Eq. (2)", "0.046", C104, "KIT: Eq. (2) vs reference + drift/p"),
+    ("6.2, Table B.1: UConn constant-current windows, ours (Ah)", "0.211", C78b, "UConn/ours"),
+    ("6.2: UConn constant-current windows, Guo lookup (Ah)", "0.109", C78b, "UConn/guo"),
+    ("Appendix B: KIT constant-current windows, ours (Ah)", "0.101", C78b, "KIT/ours"),
+    ("Appendix B: KIT constant-current windows, Guo lookup (Ah)", "0.205", C78b, "KIT/guo"),
+    ("Table A.1: C61b low segment, groups better", "9", C61b, "LOW/group_wins"),
+    ("Table C.1: C57 rule D worst group, KIT", "0.790", C57, "D_norm_groupmax/KIT/min_cov"),
+    ("Table C.1: C57 rule B worst group, KIT", "0.762", C57, "B_groupmax/KIT/min_cov"),
+    ("Table C.1: C75 mid segment (Ah)", "0.407", C75, "by_position/MID/MAE"),
+    ("3.3: CALCE training mean (Ah)", "0.075", C06, "MAE/Q_train_mean/eqcell"),
+]
+
+# derived values: (where, printed, function of the result folder)
+DERIVED = [
+    ("Abstract: UConn fusion vs own-rate propagation, 56 d (%)", "31",
+     lambda r: 100 * (1 - lookup(r, f"{C103}:T56/kf_bias") / lookup(r, f"{C103}:T56/own_ref"))),
+    ("Abstract: KIT fusion vs own-rate propagation, low end (%)", "13",
+     lambda r: 100 * (1 - lookup(r, f"{C103b}:KIT_k1/kf_bias") / lookup(r, f"{C103b}:KIT_k1/own_ref"))),
+    ("Abstract: KIT fusion vs own-rate propagation, high end (%)", "19",
+     lambda r: 100 * (1 - lookup(r, f"{C103b}:KIT_k1/own_kf") / lookup(r, f"{C103b}:KIT_k1/own_ref"))),
+    ("6.3: UConn fusion vs population rate, 56 d (%)", "43",
+     lambda r: 100 * (1 - lookup(r, f"{C91}:causal_nested_T56/kf_bias") / lookup(r, f"{C91}:causal_nested_T56/ref_drift"))),
+    ("Abstract: KIT error without temperature (% of 3.0 Ah)", "4.7",
+     lambda r: 100 * lookup(r, f"{C31}:primary_mean_over_groups/MW_quad") / 3.0),
+    ("Abstract: UConn error (% of 2.25 Ah)", "3.6", lambda r: 100 * lookup(r, f"{C11}:primary_mean_over_groups/MW_quad") / 2.25),
+    ("Abstract: KIT worst group, rule D (%)", "82", lambda r: 100 * lookup(r, f"{C92}:nested/D/KIT/min_cov")),
+    ("Abstract: UConn worst group, rule D (%)", "79.7", lambda r: 100 * lookup(r, f"{C92}:nested/D/UConn/min_cov")),
+    ("Abstract: UConn worst group, rule A (%)", "71", lambda r: 100 * lookup(r, f"{C92}:nested/A/UConn/min_cov")),
+    ("Abstract: KIT worst group, rule A (%)", "29", lambda r: 100 * lookup(r, f"{C92}:nested/A/KIT/min_cov")),
 ]
 
 
@@ -108,6 +164,8 @@ def lookup(root, key):
     for part in path.split("/"):
         m = re.fullmatch(r"(.*?)\[(\d+)\]", part)
         o = o[m.group(1)][int(m.group(2))] if m else o[part]
+    if isinstance(o, str) and "/" in o:
+        o = o.split("/")[0]
     return float(o)
 
 
@@ -119,12 +177,13 @@ def rounds_to(value, printed):
 def check(root):
     failed = []
     print(f"{'paper':<58} {'printed':>8} {'result':>10}", flush=True)
-    for where, printed, file, path in PAPER:
-        value = lookup(root, f"{file}:{path}")
+    rows = [(w, p, (lambda r, f=f, q=q: lookup(r, f"{f}:{q}"))) for w, p, f, q in PAPER] + DERIVED
+    for where, printed, fn in rows:
+        value = fn(root)
         ok = rounds_to(value, printed)
         print(f"{where:<58} {printed:>8} {value:>10.4f} {'' if ok else 'FAIL'}", flush=True)
         if not ok:
             failed.append(where)
     if failed:
         raise RuntimeError("numbers differ from the paper: " + "; ".join(failed))
-    print(f"all {len(PAPER)} numbers agree with the paper", flush=True)
+    print(f"all {len(rows)} numbers agree with the paper", flush=True)

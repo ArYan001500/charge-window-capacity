@@ -1,0 +1,35 @@
+comparison,wins,groups,p
+UConn: window sensor vs training mean,11,11,0.00048828125
+UConn: Eq. (2) vs reference + drift,8,11,0.11328125
+HUST masked: window sensor vs training mean,7,7,0.0078125
+HUST masked: Eq. (2) vs reference + drift,7,7,0.0078125
+KIT: window sensor vs training mean,13,13,0.0001220703125
+KIT: Eq. (2) vs reference + drift,10,13,0.046142578125
+KIT with temperature: window sensor vs training mean,12,13,0.001708984375
+UConn T=7: bias-aware filter vs population-rate propagation,6,11,0.5
+UConn T=7: bias-aware filter vs own-rate propagation,6,11,0.5
+UConn T=14: bias-aware filter vs population-rate propagation,9,11,0.03271484375
+UConn T=14: bias-aware filter vs own-rate propagation,6,11,0.5
+UConn T=28: bias-aware filter vs population-rate propagation,9,11,0.03271484375
+UConn T=28: bias-aware filter vs own-rate propagation,9,11,0.03271484375
+UConn T=56: bias-aware filter vs population-rate propagation,9,11,0.03271484375
+UConn T=56: bias-aware filter vs own-rate propagation,9,11,0.03271484375
+UConn measured test T=56: bias-aware filter vs propagation,10,11,0.005859375
+HUST_fixed k=1: bias-aware filter vs population-rate propagation,6,7,0.0625
+HUST_fixed k=1: bias-aware filter vs own-rate propagation,0,7,1.0
+HUST_fixed k=1: own-rate filter vs own-rate propagation,0,7,1.0
+HUST_fixed k=2: bias-aware filter vs population-rate propagation,7,7,0.0078125
+HUST_fixed k=2: bias-aware filter vs own-rate propagation,0,7,1.0
+HUST_fixed k=2: own-rate filter vs own-rate propagation,0,7,1.0
+HUST_random k=1: bias-aware filter vs population-rate propagation,0,7,1.0
+HUST_random k=1: bias-aware filter vs own-rate propagation,0,7,1.0
+HUST_random k=1: own-rate filter vs own-rate propagation,0,7,1.0
+HUST_random k=2: bias-aware filter vs population-rate propagation,0,7,1.0
+HUST_random k=2: bias-aware filter vs own-rate propagation,0,7,1.0
+HUST_random k=2: own-rate filter vs own-rate propagation,0,7,1.0
+KIT k=1: bias-aware filter vs population-rate propagation,13,13,0.0001220703125
+KIT k=1: bias-aware filter vs own-rate propagation,7,13,0.5
+KIT k=1: own-rate filter vs own-rate propagation,9,13,0.1334228515625
+KIT k=2: bias-aware filter vs population-rate propagation,13,13,0.0001220703125
+KIT k=2: bias-aware filter vs own-rate propagation,10,13,0.046142578125
+KIT k=2: own-rate filter vs own-rate propagation,10,13,0.046142578125

@@ -24,7 +24,7 @@ def step(sid, script, args, out, tier, data=(), section=""):
     return dict(id=sid, script=script, args=list(args), out=out, tier=tier, data=tuple(data), section=section)
 
 
-# tier "main": the results of Sections 6.1-6.4, Appendix A and the figures (CPU, no neural networks)
+# tier "main": the results of Sections 6.1-6.4, Appendix A and the figures (CPU; C86 and C87 train small perceptrons)
 # tier "full": neural networks, development studies of Appendix C and the CALCE illustration
 STEPS = [
     step("C10a", "c10_uconn_extract.py", ["data/uconn", C10, "cycling"], C10, "main", ["uconn"], "3.2"),
@@ -39,9 +39,11 @@ STEPS = [
     step("C32", "c32_kit_kalman.py", [C31D, C32], C32, "main", ["kit"], "Appendix C"),
     step("C54", "c54_hust_kalman.py", [C14, r("C54_HUST_KALMAN_2026-10-24_v1")], r("C54_HUST_KALMAN_2026-10-24_v1"), "main", ["hust"], "Table 3"),
     step("C61", "c61_position_integral_features.py", [".", r("C61_POSITION_INTEGRAL_2026-10-24_v1")], r("C61_POSITION_INTEGRAL_2026-10-24_v1"), "main", ["uconn"], "6.1"),
+    step("C61b", "c61b_segment_cis.py", [".", r("C61b_SEGMENT_CIS_2026-10-31_v1")], r("C61b_SEGMENT_CIS_2026-10-31_v1"), "main", ["uconn"], "Table A.1"),
     step("C62", "c62_integral_feature_replication.py", [".", r("C62_INTEGRAL_REPLICATION_2026-10-24_v1")], r("C62_INTEGRAL_REPLICATION_2026-10-24_v1"), "main", ["uconn", "hust", "kit"], "6.1"),
     step("C64", "c64_aging_speed_formula.py", [".", r("C64_AGING_SPEED_2026-10-24_v1")], r("C64_AGING_SPEED_2026-10-24_v1"), "main", ["kit"], "6.3"),
     step("C78", "c78_tim_competitors.py", [".", r("C78_TIM_COMPETITORS_2026-10-28_v1")], r("C78_TIM_COMPETITORS_2026-10-28_v1"), "main", ["uconn", "kit"], "6.2"),
+    step("C78b", "c78b_constant_current_windows.py", [".", r("C78b_CONSTANT_CURRENT_WINDOWS_2026-10-31_v1")], r("C78b_CONSTANT_CURRENT_WINDOWS_2026-10-31_v1"), "main", ["uconn", "kit"], "6.2"),
     step("C86", "c86_hust_mlp_sensor.py", ["results", r("C86_HUST_MLP_2026-10-29_v1")], r("C86_HUST_MLP_2026-10-29_v1"), "main", ["hust"], "6.1"),
     step("C87", "c87_taosee_uconn_hust.py", [".", r("C87_TAOSEE_UCONN_HUST_2026-10-29_v1")], r("C87_TAOSEE_UCONN_HUST_2026-10-29_v1"), "main", ["uconn", "hust"], "6.2"),
     step("C90", "c90_nested_calibration.py", [".", r("C90_NESTED_CALIBRATION_2026-10-29_v1")], r("C90_NESTED_CALIBRATION_2026-10-29_v1"), "main", ["uconn", "hust", "kit"], "6.4"),
@@ -56,6 +58,9 @@ STEPS = [
     step("C101", "c101_interval_diagnostics.py", [".", r("C101_R4_INTERVAL_DIAG_2026-10-30_v1")], r("C101_R4_INTERVAL_DIAG_2026-10-30_v1"), "main", ["uconn", "hust", "kit"], "Table A.3"),
     step("C101cd", "c101_errors_rho.py", [".", r("C101cd_R4_ERRORS_RHO_2026-10-30_v1")], r("C101cd_R4_ERRORS_RHO_2026-10-30_v1"), "main", ["uconn", "hust", "kit"], "Table A.3"),
     step("C102", "c102_uconn_measured_test_fusion.py", [".", r("C102_UCONN_MEASURED_TEST_FUSION_2026-10-30_v1")], r("C102_UCONN_MEASURED_TEST_FUSION_2026-10-30_v1"), "main", ["uconn"], "Table A.3"),
+    step("C103a", "c103a_uconn_own_rate.py", [".", r("C103_UCONN_OWN_RATE_2026-10-31_v1")], r("C103_UCONN_OWN_RATE_2026-10-31_v1"), "main", ["uconn"], "6.3"),
+    step("C103b", "c103b_kit_hust_own_rate.py", [".", r("C103b_KIT_HUST_OWN_RATE_2026-10-31_v1")], r("C103b_KIT_HUST_OWN_RATE_2026-10-31_v1"), "main", ["hust", "kit"], "6.3"),
+    step("C104", "c104_group_sign_tests.py", [".", r("C104_GROUP_SIGN_TESTS_2026-10-31_v1")], r("C104_GROUP_SIGN_TESTS_2026-10-31_v1"), "main", ["uconn", "hust", "kit"], "5.2"),
     step("C88", "c88_dataset_figure_data.py", [".", r("C88_DATASET_FIGURE_DATA_2026-10-29")], r("C88_DATASET_FIGURE_DATA_2026-10-29"), "main", ["uconn", "hust", "kit"], "Fig. 1"),
     step("C94", "c94_overview_causal_data.py", [".", "21"], r("C94_OVERVIEW_CAUSAL_2026-10-29"), "main", ["uconn"], "Fig. 3"),
     step("C15", "c15_uconn_dann.py", [C11, C15, C10], C15, "full", ["uconn"], "Appendix C"),

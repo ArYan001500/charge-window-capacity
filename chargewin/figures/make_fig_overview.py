@@ -96,7 +96,7 @@ ax.scatter(tests.day, tests.test, marker="D", s=22, color=ORANGE, edgecolor="whi
 ax.set_xlabel("Time (days)")
 ax.set_ylabel("Capacity (Ah)")
 ax.legend(frameon=False, fontsize=6.2, loc="lower left")
-style(ax, "(c) Sparse tests calibrate the sensor")
+style(ax, "(c) Bias-aware fusion with sparse tests")
 
 ax = axes[1, 1]
 iv = iv.sort_values("day")
@@ -108,7 +108,7 @@ ax.text(0.02, 0.05, f"coverage in this cell: {cov:.0%}", transform=ax.transAxes,
 ax.set_xlabel("Time (days)")
 ax.set_ylabel("Capacity (Ah)")
 ax.legend(frameon=False, fontsize=6.2, loc="upper right")
-style(ax, "(d) It reports how wrong it can be")
+style(ax, "(d) 90% intervals of window estimates")
 
 out = Path(os.environ.get("CHARGEWIN_FIGURES", "figures")).resolve()
 fig.savefig(out / "Figure_overview.pdf", bbox_inches="tight")
