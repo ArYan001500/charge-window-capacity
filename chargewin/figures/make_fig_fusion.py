@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
 
-from jes_style import (AQUA, BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, plt, save, style)
+from fig_style import (AQUA, BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, plt, save, style)
 
 c91 = pd.read_csv(RES / "C91_UCONN_CAUSAL_FUSION_2026-10-29_v1/per_group.csv")
 c91 = c91[c91.variant == "causal_nested"]

@@ -6,7 +6,7 @@ import pandas as pd
 from matplotlib import cm, colors
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
-from jes_style import BASE, BLUE, INK, MUTED, ORANGE, RES, badge, plt, save, style
+from fig_style import BASE, BLUE, INK, MUTED, ORANGE, RES, badge, plt, save, style
 
 D = RES / "C88_DATASET_FIGURE_DATA_2026-10-29"
 cur = pd.read_csv(D / "example_curves.csv.gz")

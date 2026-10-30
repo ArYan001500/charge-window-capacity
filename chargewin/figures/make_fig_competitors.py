@@ -4,7 +4,7 @@ import json
 import numpy as np
 from matplotlib.lines import Line2D
 
-from jes_style import (BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, VIOLET, YELLOW, panel_letters, plt, save, style)
+from fig_style import (BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, VIOLET, YELLOW, panel_letters, plt, save, style)
 
 c78 = json.load(open(RES / "C78_TIM_COMPETITORS_2026-10-28_v1/summary.json"))
 c79 = json.load(open(RES / "C79_EXACT_ARCH_2026-10-28_v1/summary.json"))

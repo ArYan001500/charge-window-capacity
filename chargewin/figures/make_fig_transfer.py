@@ -7,7 +7,7 @@ from matplotlib import colors
 from matplotlib.lines import Line2D
 from matplotlib.ticker import FuncFormatter
 
-from jes_style import (AQUA, BASE, BLUE, DATASETS, GRID, INK, MUTED, RES, badge, panel_letters, plt, save, style)
+from fig_style import (AQUA, BASE, BLUE, DATASETS, GRID, INK, MUTED, RES, badge, panel_letters, plt, save, style)
 
 SRC = {
     "UConn": ("C11_UCONN_LOGO_2026-10-23_v1/scored_logo.csv.gz", "MW_quad", "C11_UCONN_LOGO_2026-10-23_v1", None),

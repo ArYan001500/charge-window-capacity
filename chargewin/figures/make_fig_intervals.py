@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
 
-from jes_style import (AQUA, BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, badge, plt, save, style)
+from fig_style import (AQUA, BASE, BLUE, GRID, INK, MUTED, ORANGE, RES, badge, plt, save, style)
 
 _c92 = pd.read_csv(RES / "C92_NESTED_RULES_AD_2026-10-29_v1/per_group.csv")
 _c92 = _c92[_c92.contract == "nested"].copy()
