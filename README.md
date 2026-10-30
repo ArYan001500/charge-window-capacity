@@ -37,7 +37,7 @@ pytest -q
 Every tier ends with PASS or FAIL. Runs are written to `runs/<tier>/` (change with `--out-dir`); finished steps are
 skipped when a run is restarted, and each step keeps its log in `runs/<tier>/logs/`. Results of deterministic steps
 must agree with `paper/` to 1e-6. Steps that train small neural networks (PyTorch) can differ between CPU and GPU, so
-only their `summary.json` is compared, with a tolerance of 2e-3.
+only their `summary.json` is compared, with a tolerance of 2e-3. Three nonlinear least-squares fits (C49 pulse features, C74 and C75 two-electrode models) depend on the SciPy version: with the pinned SciPy 1.17.1, C74 and C75 reproduce `paper/` exactly, whereas the poorly identified circuit parameters of C49 differ (C49 was run with SciPy 1.18.1, with which it is exact). C49 is therefore not compared; its use in C49b is compared on `summary.json` with a tolerance of 1e-2 (largest change 0.006 percentage points), and the numbers printed in the paper do not change.
 
 ## Data
 

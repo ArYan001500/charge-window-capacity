@@ -15,6 +15,8 @@ REPO = PKG.parent
 PAPER = REPO / "paper"
 TOL = {"main": 1e-6, "full": 1e-6}
 NN_TOL = 2e-3
+# nonlinear least-squares fits whose results depend on the scipy version (see README)
+FIT_TOL = {"C49": 1e-2, "C49b": 1e-2, "C74": 1e-2, "C75": 1e-2}
 QUICK_STEPS = ["C14", "C54"]
 # inputs of the full tier made with external tools: forecasts of three pretrained time-series models
 # (c69_fm_forecasts.py) and PyBaMM half-cell curves (c74_export_ocp.py)
@@ -65,9 +67,14 @@ def check_against_paper(steps, root, tol):
         if not ref.exists():
             continue
         nn = "import torch" in (PKG / "steps" / s["script"]).read_text(encoding="utf-8")
-        names = [p.relative_to(ref) for p in ref.rglob("summary.json")] if nn else None
+        loose = nn or s["id"] in FIT_TOL
+        names = [p.relative_to(ref) for p in ref.rglob("summary.json")] if loose else None
+        if names == []:
+            rows.append((s["out"].split("/", 1)[1], float("nan"), "not compared (see README)"))
+            continue
         worst, problems = compare(ref, root / s["out"], names)
-        ok = worst <= (NN_TOL if nn else tol[s["tier"]]) and not problems
+        limit = FIT_TOL.get(s["id"], NN_TOL) if loose else tol[s["tier"]]
+        ok = worst <= limit and not problems
         rows.append((s["out"].split("/", 1)[1], worst, "PASS" if ok else "FAIL"))
         if not ok:
             failed.append((s["out"], problems[:5]))

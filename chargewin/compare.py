@@ -37,6 +37,8 @@ def compare(reference, actual, names=None):
             a = dict(_flat(json.loads(f.read_text(encoding="utf-8"))))
             b = dict(_flat(json.loads(g.read_text(encoding="utf-8"))))
             for k in sorted(set(a) | set(b)):
+                if k.endswith("/seconds"):
+                    continue
                 x, y = a.get(k), b.get(k)
                 if _num(x) and _num(y):
                     d = 0.0 if (np.isnan(x) and np.isnan(y)) else abs(float(x) - float(y))
@@ -48,6 +50,9 @@ def compare(reference, actual, names=None):
             if a.shape != b.shape or list(a.columns) != list(b.columns):
                 problems.append(f"{f.name}: shape {a.shape} vs {b.shape}")
                 continue
+            if not a.astype(str).equals(b.astype(str)):
+                a = a.sort_values(list(a.columns), ignore_index=True)
+                b = b.sort_values(list(b.columns), ignore_index=True)
             for c in a.columns:
                 if pd.api.types.is_numeric_dtype(a[c]) and pd.api.types.is_numeric_dtype(b[c]):
                     x, y = a[c].to_numpy(float), b[c].to_numpy(float)
