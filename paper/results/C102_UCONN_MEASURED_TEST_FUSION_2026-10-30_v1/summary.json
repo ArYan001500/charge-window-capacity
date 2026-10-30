@@ -1,0 +1,108 @@
+{
+  "S102_max_dev_vs_C91": 9.71445146547012e-17,
+  "S102_pass": true,
+  "measured_T7": {
+    "ref_drift": 0.0404,
+    "kf_scalar": 0.0434,
+    "kf_bias": 0.0338,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 9,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.008,
+      -0.0049
+    ],
+    "reduction_pct": 16.3
+  },
+  "measured_T14": {
+    "ref_drift": 0.0542,
+    "kf_scalar": 0.0596,
+    "kf_bias": 0.0435,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 9,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0123,
+      -0.009
+    ],
+    "reduction_pct": 19.8
+  },
+  "measured_T28": {
+    "ref_drift": 0.075,
+    "kf_scalar": 0.0712,
+    "kf_bias": 0.0512,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 10,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0271,
+      -0.0205
+    ],
+    "reduction_pct": 31.8
+  },
+  "measured_T56": {
+    "ref_drift": 0.1053,
+    "kf_scalar": 0.0747,
+    "kf_bias": 0.0537,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 10,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0555,
+      -0.0479
+    ],
+    "reduction_pct": 49.0
+  },
+  "pulse_T7": {
+    "ref_drift": 0.0496,
+    "kf_scalar": 0.0676,
+    "kf_bias": 0.0459,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 6,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0052,
+      -0.0016
+    ],
+    "reduction_pct": 7.3
+  },
+  "pulse_T14": {
+    "ref_drift": 0.0611,
+    "kf_scalar": 0.074,
+    "kf_bias": 0.0538,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 9,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0092,
+      -0.0053
+    ],
+    "reduction_pct": 11.9
+  },
+  "pulse_T28": {
+    "ref_drift": 0.08,
+    "kf_scalar": 0.0784,
+    "kf_bias": 0.0608,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 9,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0231,
+      -0.0151
+    ],
+    "reduction_pct": 24.1
+  },
+  "pulse_T56": {
+    "ref_drift": 0.1093,
+    "kf_scalar": 0.0784,
+    "kf_bias": 0.0622,
+    "window": 0.0829,
+    "bias_beats_ref_groups": 9,
+    "n_groups": 11,
+    "ci_bias_minus_ref": [
+      -0.0512,
+      -0.0429
+    ],
+    "reduction_pct": 43.1
+  }
+}

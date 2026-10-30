@@ -1,0 +1,31 @@
+{
+  "ocp_choice": {
+    "1": "Mohtat2020",
+    "2": "Mohtat2020",
+    "3": "Mohtat2020",
+    "4": "Mohtat2020",
+    "5": "Mohtat2020",
+    "6": "Mohtat2020",
+    "7": "Mohtat2020",
+    "8": "Mohtat2020",
+    "9": "Mohtat2020",
+    "10": "Mohtat2020",
+    "11": "Mohtat2020"
+  },
+  "S1_MAE": 1.2345,
+  "S1_voltage_rmse_mV": 10.1,
+  "S1_bias": 1.2027,
+  "S2": {
+    "LOW": 1.5164,
+    "MID": 0.6334,
+    "HIGH": 0.4741
+  },
+  "S2_n": {
+    "LOW": 1336,
+    "MID": 1320,
+    "HIGH": 1336
+  },
+  "S1_pass": false,
+  "S2_weak_pass": false,
+  "S2_strong_pass": false
+}

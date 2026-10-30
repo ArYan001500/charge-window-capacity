@@ -1,0 +1,61 @@
+{
+  "sanity_vs_C92_max": 1.1102230246251565e-16,
+  "sanity_pass": true,
+  "HUST": {
+    "worst_A": 0.881,
+    "worst_A_CI95": [
+      0.824,
+      0.895
+    ],
+    "share_boot_worst_A_ge_080": 0.997,
+    "worst_D": 0.873,
+    "worst_D_CI95": [
+      0.841,
+      0.895
+    ],
+    "share_boot_worst_D_ge_080": 1.0,
+    "width_factor": 1.082,
+    "scaledA_worst": 0.901,
+    "scaledA_mean": 0.919,
+    "D_mean_width": 0.2087,
+    "scaledA_mean_width": 0.2087
+  },
+  "KIT": {
+    "worst_A": 0.291,
+    "worst_A_CI95": [
+      0.202,
+      0.441
+    ],
+    "share_boot_worst_A_ge_080": 0.0,
+    "worst_D": 0.825,
+    "worst_D_CI95": [
+      0.753,
+      0.901
+    ],
+    "share_boot_worst_D_ge_080": 0.76,
+    "width_factor": 2.263,
+    "scaledA_worst": 0.905,
+    "scaledA_mean": 0.977,
+    "D_mean_width": 0.8069,
+    "scaledA_mean_width": 0.8069
+  },
+  "UConn": {
+    "worst_A": 0.709,
+    "worst_A_CI95": [
+      0.682,
+      0.741
+    ],
+    "share_boot_worst_A_ge_080": 0.0,
+    "worst_D": 0.797,
+    "worst_D_CI95": [
+      0.757,
+      0.844
+    ],
+    "share_boot_worst_D_ge_080": 0.409,
+    "width_factor": 1.529,
+    "scaledA_worst": 0.791,
+    "scaledA_mean": 0.955,
+    "D_mean_width": 0.6671,
+    "scaledA_mean_width": 0.6671
+  }
+}

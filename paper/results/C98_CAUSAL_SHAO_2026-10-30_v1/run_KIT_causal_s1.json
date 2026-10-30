@@ -1,0 +1,1 @@
+{"dataset": "KIT", "arch": "causal", "seed": 1, "device": "cuda", "n": 24027, "seconds": 345}

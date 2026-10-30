@@ -1,0 +1,124 @@
+{
+  "UConn": {
+    "causal_s0": {
+      "shao": 0.1249,
+      "ours": 0.0819,
+      "ours_minus_shao_CI95": [
+        -0.0466,
+        -0.0389
+      ],
+      "n": 12900
+    },
+    "causal_s1": {
+      "shao": 0.1242,
+      "ours": 0.0819,
+      "ours_minus_shao_CI95": [
+        -0.0456,
+        -0.0387
+      ],
+      "n": 12900
+    },
+    "causal_s2": {
+      "shao": 0.123,
+      "ours": 0.0819,
+      "ours_minus_shao_CI95": [
+        -0.045,
+        -0.0366
+      ],
+      "n": 12900
+    },
+    "bi_s0": {
+      "shao": 0.1012,
+      "ours": 0.0819,
+      "ours_minus_shao_CI95": [
+        -0.0226,
+        -0.0155
+      ],
+      "n": 12900
+    },
+    "bi_s1": {
+      "shao": 0.1057,
+      "ours": 0.0819,
+      "ours_minus_shao_CI95": [
+        -0.0278,
+        -0.0197
+      ],
+      "n": 12900
+    },
+    "bi_s2": {
+      "shao": 0.102,
+      "ours": 0.0819,
+      "ours_minus_shao_CI95": [
+        -0.0237,
+        -0.0163
+      ],
+      "n": 12900
+    },
+    "seeds_differ": true,
+    "causal_mean_MAE": 0.124,
+    "causal_all_CI_exclude0_favour_ours": true,
+    "bi_mean_MAE": 0.103,
+    "bi_all_CI_exclude0_favour_ours": true
+  },
+  "KIT": {
+    "causal_s0": {
+      "shao": 0.231,
+      "ours": 0.1028,
+      "ours_minus_shao_CI95": [
+        -0.1415,
+        -0.1155
+      ],
+      "n": 24027
+    },
+    "causal_s1": {
+      "shao": 0.2267,
+      "ours": 0.1028,
+      "ours_minus_shao_CI95": [
+        -0.1376,
+        -0.111
+      ],
+      "n": 24027
+    },
+    "causal_s2": {
+      "shao": 0.2289,
+      "ours": 0.1028,
+      "ours_minus_shao_CI95": [
+        -0.1395,
+        -0.1133
+      ],
+      "n": 24027
+    },
+    "bi_s0": {
+      "shao": 0.2069,
+      "ours": 0.1028,
+      "ours_minus_shao_CI95": [
+        -0.1166,
+        -0.0913
+      ],
+      "n": 24027
+    },
+    "bi_s1": {
+      "shao": 0.2063,
+      "ours": 0.1028,
+      "ours_minus_shao_CI95": [
+        -0.1147,
+        -0.092
+      ],
+      "n": 24027
+    },
+    "bi_s2": {
+      "shao": 0.2106,
+      "ours": 0.1028,
+      "ours_minus_shao_CI95": [
+        -0.1205,
+        -0.0956
+      ],
+      "n": 24027
+    },
+    "seeds_differ": true,
+    "causal_mean_MAE": 0.2289,
+    "causal_all_CI_exclude0_favour_ours": true,
+    "bi_mean_MAE": 0.2079,
+    "bi_all_CI_exclude0_favour_ours": true
+  }
+}

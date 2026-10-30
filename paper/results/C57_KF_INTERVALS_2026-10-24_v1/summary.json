@@ -1,0 +1,112 @@
+{
+  "MAE_on_scored_rows": {
+    "UConn": {
+      "kf": 0.0453,
+      "passive": 0.0815
+    },
+    "KIT": {
+      "kf": 0.0847,
+      "passive": 0.1052
+    },
+    "HUST": {
+      "kf": 0.0028,
+      "passive": 0.0459
+    }
+  },
+  "A_pooled": {
+    "HUST": {
+      "mean_cov": 0.898,
+      "min_cov": 0.871,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.0106,
+      "width_ok": true
+    },
+    "KIT": {
+      "mean_cov": 0.814,
+      "min_cov": 0.281,
+      "groups_below_80": 4,
+      "mean_width_Ah": 0.2,
+      "width_ok": true
+    },
+    "UConn": {
+      "mean_cov": 0.875,
+      "min_cov": 0.59,
+      "groups_below_80": 3,
+      "mean_width_Ah": 0.1972,
+      "width_ok": true
+    },
+    "PASS": false
+  },
+  "B_groupmax": {
+    "HUST": {
+      "mean_cov": 0.92,
+      "min_cov": 0.899,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.0119,
+      "width_ok": true
+    },
+    "KIT": {
+      "mean_cov": 0.975,
+      "min_cov": 0.762,
+      "groups_below_80": 1,
+      "mean_width_Ah": 0.821,
+      "width_ok": false
+    },
+    "UConn": {
+      "mean_cov": 0.967,
+      "min_cov": 0.821,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.3368,
+      "width_ok": false
+    },
+    "PASS": false
+  },
+  "C_norm": {
+    "HUST": {
+      "mean_cov": 0.898,
+      "min_cov": 0.861,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.0104,
+      "width_ok": true
+    },
+    "KIT": {
+      "mean_cov": 0.808,
+      "min_cov": 0.286,
+      "groups_below_80": 5,
+      "mean_width_Ah": 0.2027,
+      "width_ok": true
+    },
+    "UConn": {
+      "mean_cov": 0.877,
+      "min_cov": 0.586,
+      "groups_below_80": 3,
+      "mean_width_Ah": 0.2022,
+      "width_ok": true
+    },
+    "PASS": false
+  },
+  "D_norm_groupmax": {
+    "HUST": {
+      "mean_cov": 0.925,
+      "min_cov": 0.897,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.0121,
+      "width_ok": true
+    },
+    "KIT": {
+      "mean_cov": 0.979,
+      "min_cov": 0.79,
+      "groups_below_80": 1,
+      "mean_width_Ah": 1.0786,
+      "width_ok": false
+    },
+    "UConn": {
+      "mean_cov": 0.98,
+      "min_cov": 0.818,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.3782,
+      "width_ok": false
+    },
+    "PASS": false
+  }
+}

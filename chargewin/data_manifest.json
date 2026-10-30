@@ -1,0 +1,79 @@
+{
+ "files": [
+  {
+   "dataset": "uconn",
+   "path": "uconn/rpt_data.zip",
+   "size": 1177237783,
+   "md5": "ec663a64c4c915efb9e5b790cbbe2638",
+   "page": "https://digitalcommons.lib.uconn.edu/reil_datasets/2/"
+  },
+  {
+   "dataset": "uconn",
+   "path": "uconn/cycling_data.zip",
+   "size": 6610992970,
+   "md5": "8c0175e88525cfff86a346507b5ae1db",
+   "page": "https://digitalcommons.lib.uconn.edu/reil_datasets/2/"
+  },
+  {
+   "dataset": "uconn",
+   "path": "uconn/cycling_parameters.csv",
+   "size": 791,
+   "md5": "320329c755f861ff5d2b183dfb2d0f27",
+   "page": "https://digitalcommons.lib.uconn.edu/reil_datasets/2/"
+  },
+  {
+   "dataset": "hust",
+   "path": "hust/our_data.zip",
+   "size": 1188136932,
+   "md5": "96d8b45936ae29b6bb94b79dea987f36",
+   "page": "https://doi.org/10.17632/nsc7hnsg4s.2",
+   "url": "https://data.mendeley.com/public-files/datasets/nsc7hnsg4s/files/5ca0ac3e-d598-4d07-8dcb-879aa047e98b/file_downloaded"
+  },
+  {
+   "dataset": "kit",
+   "path": "kit/10.35097-1969.tar",
+   "size": 333402624,
+   "md5": "aa60c8fd08755a253ac7479dde41c93d",
+   "page": "https://doi.org/10.35097/1969"
+  },
+  {
+   "dataset": "kit",
+   "path": "kit/cell_log_age_ultracompr.7z",
+   "size": 7138760906,
+   "md5": "485ef5184f5bf40446693105d2517340",
+   "page": "https://doi.org/10.35097/kww7jv8ajuvchcah"
+  },
+  {
+   "dataset": "calce",
+   "path": "calce/SOC_20-80_2C.zip",
+   "size": 74575680,
+   "md5": "bb9ea016ee01d4242b046f1694b6637d",
+   "page": "https://calce.umd.edu/battery-data",
+   "url": "https://web.calce.umd.edu/batteries/data/pl/SOC_20-80_2C.zip"
+  },
+  {
+   "dataset": "calce",
+   "path": "calce/SOC_20-80_HalfC.zip",
+   "size": 132710443,
+   "md5": "159ad5078d7708ef893215ae28989b95",
+   "page": "https://calce.umd.edu/battery-data",
+   "url": "https://web.calce.umd.edu/batteries/data/pl/SOC_20-80_HalfC.zip"
+  }
+ ],
+ "quick_hust_md5": {
+  "1-1": "1f919fe0dba214fb0bb0c38cf602981a",
+  "1-5": "d08e37d57236f957d445a439ed972d1e",
+  "2-2": "31f17f0bd8806351e8086353189df84d",
+  "2-5": "f0d03c86fcf0738ff02b4712dc1307b3",
+  "3-1": "d64a5dbcf7197ac9447529183ca70ea6",
+  "3-5": "f2e67eb1a8076292ee0c43a2022bd954",
+  "4-1": "1d35a28cebecd0cb6f715ab6f9ed154b",
+  "4-5": "1939094d5f7961dd81d7d646f4cb6771",
+  "5-1": "989b52d2ed963426b02b2b6e2225ea39",
+  "5-5": "46dfcda4f0003d3cc5b470ad364ffc6c",
+  "6-1": "7833610b21c30bcd3e1bc313c1279f49",
+  "6-5": "a2b5f9c90adcea06dba3c577ccf594be",
+  "7-1": "2c942f523ed0e166bf108a405a4e9dcf",
+  "7-5": "bcb761e04d796f826b505cc454bd1d20"
+ }
+}

@@ -1,0 +1,60 @@
+{
+  "table": [
+    {
+      "policy": "VAR33+SUP",
+      "mae": 0.1604,
+      "budget": 0.3546
+    },
+    {
+      "policy": "PER3",
+      "mae": 0.106,
+      "budget": 0.3665
+    },
+    {
+      "policy": "VAR33",
+      "mae": 0.1062,
+      "budget": 0.3701
+    },
+    {
+      "policy": "RND0.33",
+      "mae": 0.1216,
+      "budget": 0.3836
+    },
+    {
+      "policy": "VAR50+SUP",
+      "mae": 0.122,
+      "budget": 0.3979
+    },
+    {
+      "policy": "VAR50",
+      "mae": 0.1012,
+      "budget": 0.5031
+    },
+    {
+      "policy": "RND0.5",
+      "mae": 0.1067,
+      "budget": 0.5334
+    },
+    {
+      "policy": "PER2",
+      "mae": 0.1023,
+      "budget": 0.538
+    },
+    {
+      "policy": "ALL",
+      "mae": 0.0811,
+      "budget": 1.0
+    }
+  ],
+  "VAR50_minus_PER2_CI95": [
+    -0.0032,
+    0.001
+  ],
+  "VAR33_minus_PER3_CI95": [
+    -0.0,
+    0.0005
+  ],
+  "C1_pass": false,
+  "C2_pass": false,
+  "VAR50_over_ALL": 1.248
+}

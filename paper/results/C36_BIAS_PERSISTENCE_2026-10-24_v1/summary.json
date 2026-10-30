@@ -1,0 +1,54 @@
+{
+  "per_setting": [
+    {
+      "dataset": "KIT",
+      "sensor": "MLP",
+      "passive": 0.0638,
+      "kf": 0.0852,
+      "gain": -0.0214,
+      "kf_wins": 1,
+      "n": 13,
+      "icc": 0.2087,
+      "lag1": 0.6567
+    },
+    {
+      "dataset": "KIT",
+      "sensor": "ridge",
+      "passive": 0.1052,
+      "kf": 0.0847,
+      "gain": 0.0205,
+      "kf_wins": 10,
+      "n": 13,
+      "icc": 0.1057,
+      "lag1": 0.6475
+    },
+    {
+      "dataset": "UConn",
+      "sensor": "MLP",
+      "passive": 0.0798,
+      "kf": 0.0434,
+      "gain": 0.0364,
+      "kf_wins": 11,
+      "n": 11,
+      "icc": 0.0416,
+      "lag1": 0.906
+    },
+    {
+      "dataset": "UConn",
+      "sensor": "ridge",
+      "passive": 0.0819,
+      "kf": 0.0448,
+      "gain": 0.0371,
+      "kf_wins": 10,
+      "n": 11,
+      "icc": 0.0501,
+      "lag1": 0.9007
+    }
+  ],
+  "spearman_gain_vs": {
+    "icc": -0.5728397742075553,
+    "lag1": 0.3991532783326096,
+    "passive": 0.509552757273122
+  },
+  "n_points": 48
+}

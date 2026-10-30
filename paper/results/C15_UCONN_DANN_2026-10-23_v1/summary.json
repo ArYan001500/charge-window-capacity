@@ -1,0 +1,12 @@
+{
+  "device": "cuda",
+  "mean_over_groups": {
+    "M0": 0.20593,
+    "MW_lin": 0.1012,
+    "MW_quad": 0.0819,
+    "MLP_src": 0.07982,
+    "DANN": 0.08553
+  },
+  "DANN_beats_MW_quad": 6,
+  "DANN_beats_MLP_src": 5
+}

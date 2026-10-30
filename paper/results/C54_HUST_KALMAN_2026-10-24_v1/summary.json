@@ -1,0 +1,51 @@
+{
+  "fixed_k1": {
+    "passive": 0.0131,
+    "ref_drift": 0.0022,
+    "bias_kf": 0.0021,
+    "kf_beats_passive": "7/7",
+    "kf_beats_ref": "6/7",
+    "rule": 0.0021,
+    "rule_setting": "bias_kf",
+    "best_setting": "bias_kf",
+    "R1_correct": true,
+    "R2_groups_ok": "7/7"
+  },
+  "fixed_k2": {
+    "passive": 0.0131,
+    "ref_drift": 0.0042,
+    "bias_kf": 0.0032,
+    "kf_beats_passive": "7/7",
+    "kf_beats_ref": "7/7",
+    "rule": 0.0032,
+    "rule_setting": "bias_kf",
+    "best_setting": "bias_kf",
+    "R1_correct": true,
+    "R2_groups_ok": "7/7"
+  },
+  "random_k1": {
+    "passive": 0.0459,
+    "ref_drift": 0.0022,
+    "bias_kf": 0.0029,
+    "kf_beats_passive": "7/7",
+    "kf_beats_ref": "0/7",
+    "rule": 0.0029,
+    "rule_setting": "bias_kf",
+    "best_setting": "bias_kf",
+    "R1_correct": true,
+    "R2_groups_ok": "7/7"
+  },
+  "random_k2": {
+    "passive": 0.0459,
+    "ref_drift": 0.0042,
+    "bias_kf": 0.0049,
+    "kf_beats_passive": "7/7",
+    "kf_beats_ref": "0/7",
+    "rule": 0.0049,
+    "rule_setting": "bias_kf",
+    "best_setting": "bias_kf",
+    "R1_correct": true,
+    "R2_groups_ok": "7/7"
+  },
+  "R1_pass": "4/4"
+}

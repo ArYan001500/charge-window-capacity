@@ -1,0 +1,102 @@
+{
+  "UConn": {
+    "MAE_Ah": 0.0819,
+    "MAE_pct_nominal": 3.64,
+    "MAPE_pct_measured": 5.32,
+    "bins": {
+      "<0.70": {
+        "windows": 2560,
+        "cells": 44,
+        "MAE": 0.1421,
+        "bias": 0.0494,
+        "MAPE_measured": 11.22
+      },
+      "0.70-0.80": {
+        "windows": 3930,
+        "cells": 44,
+        "MAE": 0.0974,
+        "bias": -0.0448,
+        "MAPE_measured": 5.83
+      },
+      "0.80-0.90": {
+        "windows": 5120,
+        "cells": 44,
+        "MAE": 0.0494,
+        "bias": -0.0017,
+        "MAPE_measured": 2.59
+      },
+      ">=0.90": {
+        "windows": 1290,
+        "cells": 44,
+        "MAE": 0.0605,
+        "bias": -0.0282,
+        "MAPE_measured": 2.93
+      }
+    }
+  },
+  "HUST": {
+    "MAE_Ah": 0.0459,
+    "MAE_pct_nominal": 4.18,
+    "MAPE_pct_measured": 4.44,
+    "bins": {
+      "0.80-0.90": {
+        "windows": 2735,
+        "cells": 77,
+        "MAE": 0.0884,
+        "bias": 0.0807,
+        "MAPE_measured": 9.55
+      },
+      ">=0.90": {
+        "windows": 11525,
+        "cells": 77,
+        "MAE": 0.036,
+        "bias": -0.0192,
+        "MAPE_measured": 3.23
+      }
+    }
+  },
+  "KIT": {
+    "MAE_Ah": 0.1028,
+    "MAE_pct_nominal": 3.43,
+    "MAPE_pct_measured": 4.46,
+    "bins": {
+      "<0.70": {
+        "windows": 2469,
+        "cells": 114,
+        "MAE": 0.1525,
+        "bias": 0.0728,
+        "MAPE_measured": 9.09
+      },
+      "0.70-0.80": {
+        "windows": 9348,
+        "cells": 147,
+        "MAE": 0.079,
+        "bias": 0.0198,
+        "MAPE_measured": 3.48
+      },
+      "0.80-0.90": {
+        "windows": 9240,
+        "cells": 172,
+        "MAE": 0.0601,
+        "bias": -0.0064,
+        "MAPE_measured": 2.36
+      },
+      ">=0.90": {
+        "windows": 2970,
+        "cells": 152,
+        "MAE": 0.1349,
+        "bias": -0.1026,
+        "MAPE_measured": 4.8
+      }
+    }
+  },
+  "spearman": {
+    "n_groups": 24,
+    "rho": 0.416,
+    "CI95": [
+      -0.059,
+      0.801
+    ],
+    "negative_gain_groups": 5
+  }
+}

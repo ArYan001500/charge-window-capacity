@@ -1,0 +1,131 @@
+{
+  "table": [
+    {
+      "policy": "PASSIVE",
+      "mae": 0.0815,
+      "budget": 0.0
+    },
+    {
+      "policy": "PER3",
+      "mae": 0.0489,
+      "budget": 0.3603
+    },
+    {
+      "policy": "PER2",
+      "mae": 0.043,
+      "budget": 0.5131
+    },
+    {
+      "policy": "FLUCT_hyb",
+      "mae": 0.0496,
+      "budget": 0.5248
+    },
+    {
+      "policy": "FLUCT_thr",
+      "mae": 0.0469,
+      "budget": 0.5464
+    },
+    {
+      "policy": "SELECTED",
+      "mae": 0.0544,
+      "budget": 0.5487
+    },
+    {
+      "policy": "INNOV_hyb",
+      "mae": 0.0461,
+      "budget": 0.5531
+    },
+    {
+      "policy": "INNOV_thr",
+      "mae": 0.0451,
+      "budget": 0.594
+    },
+    {
+      "policy": "PER3of5",
+      "mae": 0.0463,
+      "budget": 0.6198
+    },
+    {
+      "policy": "PER2of3",
+      "mae": 0.0433,
+      "budget": 0.6891
+    },
+    {
+      "policy": "ALL",
+      "mae": 0.0337,
+      "budget": 1.0
+    }
+  ],
+  "U1_reference": "PER3of5",
+  "U1_CI95": [
+    -0.0056,
+    0.0242
+  ],
+  "U1_pass": false,
+  "U2_spearman_budget_vs_passive_error": 0.518,
+  "U2_pass": true,
+  "U3_ratio_to_ALL": 1.614,
+  "U3_pass": false,
+  "selected_counts": {
+    "INNOV_thr": 6,
+    "FLUCT_thr": 3,
+    "INNOV_hyb": 2
+  },
+  "per_group_selected": [
+    {
+      "group": 1,
+      "mae": 0.05,
+      "budget": 0.373
+    },
+    {
+      "group": 2,
+      "mae": 0.054,
+      "budget": 0.733
+    },
+    {
+      "group": 3,
+      "mae": 0.031,
+      "budget": 0.562
+    },
+    {
+      "group": 4,
+      "mae": 0.05,
+      "budget": 0.658
+    },
+    {
+      "group": 5,
+      "mae": 0.039,
+      "budget": 0.297
+    },
+    {
+      "group": 6,
+      "mae": 0.035,
+      "budget": 0.517
+    },
+    {
+      "group": 7,
+      "mae": 0.037,
+      "budget": 0.586
+    },
+    {
+      "group": 8,
+      "mae": 0.087,
+      "budget": 0.399
+    },
+    {
+      "group": 9,
+      "mae": 0.118,
+      "budget": 0.739
+    },
+    {
+      "group": 10,
+      "mae": 0.048,
+      "budget": 0.51
+    },
+    {
+      "group": 11,
+      "mae": 0.05,
+      "budget": 0.662
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+ "note": "14 HUST cells (data.QUICK_HUST_CELLS); values from the same steps on the same cells",
+ "values": {
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:random/primary_mean_over_groups/M0": 0.07285,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:random/primary_mean_over_groups/MW_quad": 0.05351,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:random/primary_mean_over_groups/P1": 0.00396,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:random/primary_mean_over_groups/P2": 0.00348,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:random/K1_MW_quad": 7,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:fixed/primary_mean_over_groups/M0": 0.07285,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:fixed/primary_mean_over_groups/MW_quad": 0.0221,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:fixed/primary_mean_over_groups/P1": 0.00396,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:fixed/primary_mean_over_groups/P2": 0.00166,
+  "results/C14_HUST_LOGO_2026-10-23_v1/summary.json:fixed/K1_MW_quad": 7,
+  "results/C54_HUST_KALMAN_2026-10-24_v1/summary.json:random_k1/passive": 0.0533,
+  "results/C54_HUST_KALMAN_2026-10-24_v1/summary.json:random_k1/ref_drift": 0.002,
+  "results/C54_HUST_KALMAN_2026-10-24_v1/summary.json:random_k1/bias_kf": 0.0026,
+  "results/C54_HUST_KALMAN_2026-10-24_v1/summary.json:fixed_k1/passive": 0.0221,
+  "results/C54_HUST_KALMAN_2026-10-24_v1/summary.json:fixed_k1/ref_drift": 0.002,
+  "results/C54_HUST_KALMAN_2026-10-24_v1/summary.json:fixed_k1/bias_kf": 0.0019
+ },
+ "tolerance": 1e-06
+}

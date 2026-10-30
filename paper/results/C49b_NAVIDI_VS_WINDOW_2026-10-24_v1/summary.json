@@ -1,0 +1,26 @@
+{
+  "A_their_features_all_pulses": {
+    "MAPE_pooled": 3.349,
+    "MAPE_eqcell": 3.432,
+    "R2": 0.904,
+    "n": 5022,
+    "cells": 20
+  },
+  "A_reported_GlobalENet": 3.7,
+  "A_reported_best": 3.1,
+  "B_pulse_only_same_rows": {
+    "MAPE_pooled": 2.973,
+    "MAPE_eqcell": 3.267,
+    "R2": 0.92,
+    "n": 5360,
+    "cells": 20
+  },
+  "B_pulse_plus_window_same_rows": {
+    "MAPE_pooled": 3.189,
+    "MAPE_eqcell": 3.262,
+    "R2": 0.915,
+    "n": 5360,
+    "cells": 20
+  },
+  "B_cells_window_helps": "13/20"
+}

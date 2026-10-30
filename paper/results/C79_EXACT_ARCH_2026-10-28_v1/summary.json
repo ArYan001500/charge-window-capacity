@@ -1,0 +1,52 @@
+{
+  "device": "cuda",
+  "guo_exact_slow_segments": {
+    "LOW": {
+      "ours_F0F1": 0.0174,
+      "guo_exact": 0.2014,
+      "ours_minus_guo_CI95": [
+        -0.1869,
+        -0.1812
+      ],
+      "n": 1336
+    },
+    "MID": {
+      "ours_F0F1": 0.0759,
+      "guo_exact": 0.1546,
+      "ours_minus_guo_CI95": [
+        -0.0824,
+        -0.0752
+      ],
+      "n": 1320
+    },
+    "HIGH": {
+      "ours_F0F1": 0.0518,
+      "guo_exact": 0.2407,
+      "ours_minus_guo_CI95": [
+        -0.1952,
+        -0.1828
+      ],
+      "n": 1336
+    }
+  },
+  "shao_exact_UConn": {
+    "ours": 0.0819,
+    "shao_exact": 0.103,
+    "ours_minus_shao_CI95": [
+      -0.0258,
+      -0.0162
+    ],
+    "n": 12900
+  },
+  "shao_exact_KIT": {
+    "ours": 0.1028,
+    "shao_exact": 0.2051,
+    "ours_minus_shao_CI95": [
+      -0.1141,
+      -0.0903
+    ],
+    "n": 24027
+  },
+  "X1_pass_LOW": true,
+  "X2_pass": true
+}

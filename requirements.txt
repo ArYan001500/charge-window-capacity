@@ -1,0 +1,7 @@
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.17.1
+matplotlib==3.10.9
+torch==2.12.0
+py7zr==1.1.4
+pytest==9.1.1

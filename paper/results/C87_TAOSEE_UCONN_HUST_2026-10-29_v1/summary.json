@@ -1,0 +1,299 @@
+{
+  "UConn": {
+    "3.60-3.70V": {
+      "coverage": 0.019,
+      "n": 251,
+      "groups": 10,
+      "cells": 31,
+      "MW_quad": 0.2862,
+      "TS_ridge": 0.0752,
+      "TS_mlp": 0.0615,
+      "ours_minus_TS_mlp": {
+        "point": 0.2247,
+        "CI95": [
+          0.2027,
+          0.2458
+        ],
+        "ours_better_groups": "0/10"
+      },
+      "ours_minus_TS_ridge": {
+        "point": 0.211,
+        "CI95": [
+          0.1898,
+          0.2333
+        ],
+        "ours_better_groups": "2/10"
+      },
+      "evaluable": true
+    },
+    "3.70-3.80V": {
+      "coverage": 0.041,
+      "n": 523,
+      "groups": 11,
+      "cells": 38,
+      "MW_quad": 0.2202,
+      "TS_ridge": 0.1272,
+      "TS_mlp": 0.102,
+      "ours_minus_TS_mlp": {
+        "point": 0.1182,
+        "CI95": [
+          0.0945,
+          0.1411
+        ],
+        "ours_better_groups": "2/11"
+      },
+      "ours_minus_TS_ridge": {
+        "point": 0.093,
+        "CI95": [
+          0.074,
+          0.112
+        ],
+        "ours_better_groups": "3/11"
+      },
+      "evaluable": true
+    },
+    "3.80-3.90V": {
+      "coverage": 0.194,
+      "n": 2499,
+      "groups": 11,
+      "cells": 43,
+      "MW_quad": 0.1669,
+      "TS_ridge": 0.1356,
+      "TS_mlp": 0.1627,
+      "ours_minus_TS_mlp": {
+        "point": 0.0042,
+        "CI95": [
+          -0.0257,
+          0.0303
+        ],
+        "ours_better_groups": "4/11"
+      },
+      "ours_minus_TS_ridge": {
+        "point": 0.0313,
+        "CI95": [
+          -0.004,
+          0.0629
+        ],
+        "ours_better_groups": "6/11"
+      },
+      "evaluable": true
+    },
+    "3.90-4.00V": {
+      "coverage": 0.498,
+      "n": 6429,
+      "groups": 11,
+      "cells": 44,
+      "MW_quad": 0.0635,
+      "TS_ridge": 0.1322,
+      "TS_mlp": 0.114,
+      "ours_minus_TS_mlp": {
+        "point": -0.0505,
+        "CI95": [
+          -0.0537,
+          -0.0472
+        ],
+        "ours_better_groups": "11/11"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0687,
+        "CI95": [
+          -0.0716,
+          -0.0656
+        ],
+        "ours_better_groups": "10/11"
+      },
+      "evaluable": true
+    },
+    "4.00-4.10V": {
+      "coverage": 0.702,
+      "n": 9057,
+      "groups": 11,
+      "cells": 44,
+      "MW_quad": 0.0683,
+      "TS_ridge": 0.1421,
+      "TS_mlp": 0.1282,
+      "ours_minus_TS_mlp": {
+        "point": -0.0599,
+        "CI95": [
+          -0.0656,
+          -0.0551
+        ],
+        "ours_better_groups": "11/11"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0738,
+        "CI95": [
+          -0.0781,
+          -0.0698
+        ],
+        "ours_better_groups": "11/11"
+      },
+      "evaluable": true
+    },
+    "primary": "4.00-4.10V"
+  },
+  "HUST_masked": {
+    "3.30-3.40V": {
+      "coverage": 0.028,
+      "n": 401,
+      "groups": 7,
+      "cells": 76,
+      "MW_quad": 0.0407,
+      "TS_ridge": 0.0436,
+      "TS_mlp": 0.0261,
+      "ours_minus_TS_mlp": {
+        "point": 0.0146,
+        "CI95": [
+          0.009,
+          0.0197
+        ],
+        "ours_better_groups": "0/7"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0029,
+        "CI95": [
+          -0.0084,
+          0.0028
+        ],
+        "ours_better_groups": "5/7"
+      },
+      "evaluable": true
+    },
+    "3.40-3.50V": {
+      "coverage": 0.104,
+      "n": 1476,
+      "groups": 7,
+      "cells": 77,
+      "MW_quad": 0.0388,
+      "TS_ridge": 0.0453,
+      "TS_mlp": 0.0339,
+      "ours_minus_TS_mlp": {
+        "point": 0.0049,
+        "CI95": [
+          0.0019,
+          0.0076
+        ],
+        "ours_better_groups": "1/7"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0065,
+        "CI95": [
+          -0.01,
+          -0.0034
+        ],
+        "ours_better_groups": "6/7"
+      },
+      "evaluable": true
+    },
+    "3.50-3.60V": {
+      "coverage": 0.058,
+      "n": 829,
+      "groups": 7,
+      "cells": 60,
+      "MW_quad": 0.0498,
+      "TS_ridge": 0.0665,
+      "TS_mlp": 0.0597,
+      "ours_minus_TS_mlp": {
+        "point": -0.0099,
+        "CI95": [
+          -0.0177,
+          -0.003
+        ],
+        "ours_better_groups": "6/7"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0167,
+        "CI95": [
+          -0.0228,
+          -0.0108
+        ],
+        "ours_better_groups": "6/7"
+      },
+      "evaluable": true
+    },
+    "primary": "3.40-3.50V"
+  },
+  "HUST_fixed": {
+    "3.30-3.40V": {
+      "coverage": 1.0,
+      "n": 14260,
+      "groups": 7,
+      "cells": 77,
+      "MW_quad": 0.0131,
+      "TS_ridge": 0.0423,
+      "TS_mlp": 0.0213,
+      "ours_minus_TS_mlp": {
+        "point": -0.0082,
+        "CI95": [
+          -0.0106,
+          -0.0058
+        ],
+        "ours_better_groups": "7/7"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0292,
+        "CI95": [
+          -0.033,
+          -0.0254
+        ],
+        "ours_better_groups": "7/7"
+      },
+      "evaluable": true
+    },
+    "3.40-3.50V": {
+      "coverage": 1.0,
+      "n": 14259,
+      "groups": 7,
+      "cells": 77,
+      "MW_quad": 0.0131,
+      "TS_ridge": 0.0402,
+      "TS_mlp": 0.0198,
+      "ours_minus_TS_mlp": {
+        "point": -0.0067,
+        "CI95": [
+          -0.0097,
+          -0.0041
+        ],
+        "ours_better_groups": "7/7"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.0271,
+        "CI95": [
+          -0.0306,
+          -0.0239
+        ],
+        "ours_better_groups": "7/7"
+      },
+      "evaluable": true
+    },
+    "3.50-3.60V": {
+      "coverage": 0.043,
+      "n": 610,
+      "groups": 7,
+      "cells": 76,
+      "MW_quad": 0.014,
+      "TS_ridge": 0.044,
+      "TS_mlp": 0.0314,
+      "ours_minus_TS_mlp": {
+        "point": -0.0174,
+        "CI95": [
+          -0.0226,
+          -0.0125
+        ],
+        "ours_better_groups": "7/7"
+      },
+      "ours_minus_TS_ridge": {
+        "point": -0.03,
+        "CI95": [
+          -0.0356,
+          -0.0243
+        ],
+        "ours_better_groups": "7/7"
+      },
+      "evaluable": true
+    },
+    "primary": "3.30-3.40V"
+  },
+  "T1_UConn_PASS": true,
+  "T2_HUST_masked_PASS": false
+}

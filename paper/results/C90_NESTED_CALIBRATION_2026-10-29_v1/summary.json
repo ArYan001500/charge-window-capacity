@@ -1,0 +1,48 @@
+{
+  "UConn": {
+    "max_abs_dev_vs_locked_pred": 5.29867916210236e-08,
+    "D_C56": {
+      "mean_cov": 0.975,
+      "min_cov": 0.886,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.5822
+    },
+    "D_nested": {
+      "mean_cov": 0.969,
+      "min_cov": 0.797,
+      "groups_below_80": 1,
+      "mean_width_Ah": 0.6671
+    }
+  },
+  "HUST": {
+    "max_abs_dev_vs_locked_pred": 1.8180032013148661e-07,
+    "D_C56": {
+      "mean_cov": 0.917,
+      "min_cov": 0.89,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.2176
+    },
+    "D_nested": {
+      "mean_cov": 0.906,
+      "min_cov": 0.873,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.2087
+    }
+  },
+  "KIT": {
+    "max_abs_dev_vs_locked_pred": 3.638176382381175e-08,
+    "D_C56": {
+      "mean_cov": 0.973,
+      "min_cov": 0.9,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.7696
+    },
+    "D_nested": {
+      "mean_cov": 0.973,
+      "min_cov": 0.825,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.8069
+    }
+  },
+  "PASS_nested": false
+}

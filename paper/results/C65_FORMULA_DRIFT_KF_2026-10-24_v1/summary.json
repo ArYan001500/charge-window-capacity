@@ -1,0 +1,248 @@
+{
+  "D0_nowin": 0.1577,
+  "D0_win": 0.0847,
+  "D1_nowin": 0.0994,
+  "D1_win": 0.0811,
+  "D2_nowin": 0.1011,
+  "D2_win": 0.0842,
+  "D3_nowin": 0.1016,
+  "D3_win": 0.0835,
+  "D4_nowin": 0.1011,
+  "D4_win": 0.0828,
+  "best_formula": "D4",
+  "fast_groups": {
+    "6": {
+      "D0": 0.1321,
+      "D1": 0.1285,
+      "D2": 0.1305,
+      "D3": 0.1341,
+      "D4": 0.1288
+    },
+    "7": {
+      "D0": 0.2775,
+      "D1": 0.2812,
+      "D2": 0.2836,
+      "D3": 0.2748,
+      "D4": 0.2816
+    },
+    "10": {
+      "D0": 0.1172,
+      "D1": 0.1274,
+      "D2": 0.1388,
+      "D3": 0.135,
+      "D4": 0.1335
+    },
+    "11": {
+      "D0": 0.1494,
+      "D1": 0.163,
+      "D2": 0.1742,
+      "D3": 0.1569,
+      "D4": 0.17
+    }
+  },
+  "K2_fast_improved": "1/4",
+  "group_wins_best_vs_D0": "7/13",
+  "best_minus_D0_CI95": [
+    -0.0043,
+    0.0007
+  ],
+  "K1_pass": false,
+  "formulas": [
+    {
+      "group": 0,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv']"
+    },
+    {
+      "group": 0,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T', 'nd_dv', 'nd', 'T']"
+    },
+    {
+      "group": 0,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'hd', 'hd_T', 'ahd_dv']"
+    },
+    {
+      "group": 1,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv']"
+    },
+    {
+      "group": 1,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T', 'nd_dv', 'T', 'nd', 'hd_dv', 'hd_T']"
+    },
+    {
+      "group": 1,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'hd', 'hd_T', 'ahd_dv']"
+    },
+    {
+      "group": 2,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv']"
+    },
+    {
+      "group": 2,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_dv', 'hd_T', 'hd_chg']"
+    },
+    {
+      "group": 2,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'hd', 'hd_T', 'ahd_dv']"
+    },
+    {
+      "group": 3,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd_dv', 'ahd_T', 'ahd', 'T']"
+    },
+    {
+      "group": 3,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_dv', 'nd_T', 'hd_dv', 'hd_T', 'nd_chg']"
+    },
+    {
+      "group": 3,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd_dv', 'ahd_T', 'ahd', 'T', 'hd_dv']"
+    },
+    {
+      "group": 4,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv', 'ahd_chg']"
+    },
+    {
+      "group": 4,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T', 'nd_dv', 'T', 'nd']"
+    },
+    {
+      "group": 4,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'hd', 'hd_T', 'ahd_dv']"
+    },
+    {
+      "group": 5,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv']"
+    },
+    {
+      "group": 5,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T']"
+    },
+    {
+      "group": 5,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'hd', 'hd_T', 'ahd_dv']"
+    },
+    {
+      "group": 6,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv']"
+    },
+    {
+      "group": 6,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T']"
+    },
+    {
+      "group": 6,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'hd', 'hd_T', 'hd_dv']"
+    },
+    {
+      "group": 7,
+      "model": "D2",
+      "formula_with_history": "['prev', 'Q0', 'ahd_chg', 'ahd_T', 'T', 'ahd']"
+    },
+    {
+      "group": 7,
+      "model": "D3",
+      "formula_with_history": "['prev', 'Q0', 'nd_chg', 'nd_T', 'hd_T', 'hd_dv', 'nd_dv']"
+    },
+    {
+      "group": 7,
+      "model": "D4",
+      "formula_with_history": "['prev', 'Q0', 'ahd_chg', 'ahd_T', 'nd_chg', 'ahd', 'T', 'hd_dv', 'hd_T', 'nd']"
+    },
+    {
+      "group": 8,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv', 'ahd_chg']"
+    },
+    {
+      "group": 8,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T', 'nd_dv', 'T', 'nd', 'hd_dv', 'hd_T']"
+    },
+    {
+      "group": 8,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'nd', 'nd_T', 'Q0', 'T']"
+    },
+    {
+      "group": 9,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'ahd_dv', 'ahd_chg']"
+    },
+    {
+      "group": 9,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_chg', 'nd_T', 'nd_dv', 'hd_dv', 'hd_T']"
+    },
+    {
+      "group": 9,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'nd', 'nd_T', 'nd_dv']"
+    },
+    {
+      "group": 10,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd_dv', 'ahd_T', 'ahd', 'T', 'ahd_chg', 'Q0']"
+    },
+    {
+      "group": 10,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_dv', 'hd_T', 'hd_chg']"
+    },
+    {
+      "group": 10,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd_dv', 'nd_T', 'ahd', 'Q0', 'T', 'ahd_T', 'nd']"
+    },
+    {
+      "group": 11,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'ahd_dv', 'T']"
+    },
+    {
+      "group": 11,
+      "model": "D3",
+      "formula_with_history": "['prev', 'nd_dv', 'nd_T', 'nd_chg', 'T', 'nd']"
+    },
+    {
+      "group": 11,
+      "model": "D4",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'ahd_dv', 'T', 'hd', 'hd_T']"
+    },
+    {
+      "group": 12,
+      "model": "D2",
+      "formula_with_history": "['prev', 'ahd', 'ahd_T', 'T', 'Q0']"
+    },
+    {
+      "group": 12,
+      "model": "D3",
+      "formula_with_history": "['prev', 'hd_chg', 'nd_T', 'hd_T', 'Q0', 'hd', 'nd_chg']"
+    },
+    {
+      "group": 12,
+      "model": "D4",
+      "formula_with_history": "['prev', 'hd_chg', 'ahd_T', 'T', 'ahd_dv']"
+    }
+  ],
+  "H_hours_D3_over_D2": 0.991
+}

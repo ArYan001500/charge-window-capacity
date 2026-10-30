@@ -1,0 +1,55 @@
+{
+  "UConn": {
+    "n": 12900,
+    "published_ref": 0.0819,
+    "base": 0.0819,
+    "base_F1": 0.0832,
+    "wins": "9/11",
+    "CI95": [
+      -0.0006,
+      0.0031
+    ],
+    "better": false,
+    "worse": false
+  },
+  "HUST_fixed": {
+    "n": 14260,
+    "published_ref": 0.0131,
+    "base": 0.0131,
+    "base_F1": 0.0106,
+    "wins": "7/7",
+    "CI95": [
+      -0.0033,
+      -0.0017
+    ],
+    "better": true,
+    "worse": false
+  },
+  "HUST_random": {
+    "n": 14260,
+    "published_ref": 0.0459,
+    "base": 0.0459,
+    "base_F1": 0.044,
+    "wins": "7/7",
+    "CI95": [
+      -0.0026,
+      -0.0011
+    ],
+    "better": true,
+    "worse": false
+  },
+  "KIT": {
+    "n": 24027,
+    "published_ref": 0.1028,
+    "base": 0.1028,
+    "base_F1": 0.0973,
+    "wins": "9/13",
+    "CI95": [
+      -0.0075,
+      -0.0034
+    ],
+    "better": true,
+    "worse": false
+  },
+  "H_rep_pass": true
+}

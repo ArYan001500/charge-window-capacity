@@ -1,0 +1,37 @@
+{
+  "selected_DANN": 0.0606,
+  "selected_MLP": 0.0642,
+  "oracle_DANN": 0.0515,
+  "oracle_MLP": 0.0558,
+  "T1_DANN_minus_MLP_CI95": [
+    -0.0073,
+    0.0002
+  ],
+  "T1_DANN_wins": "4/13",
+  "T1_pass": true,
+  "T2_oracleDANN_wins_vs_selMLP": "10/13",
+  "T2_oracleDANN_over_selMLP": 0.803,
+  "C33_reference": {
+    "MLP_src": 0.0665,
+    "DANN": 0.0808,
+    "MW_quadT": 0.1028
+  },
+  "selected_configs": {
+    "DANN": {
+      "('DANN', 0.03, 150, 64)": 5,
+      "('DANN', 0.1, 60, 64)": 2,
+      "('DANN', 0.03, 150, 128)": 1,
+      "('DANN', 0.1, 150, 128)": 1,
+      "('DANN', 0.03, 60, 128)": 1,
+      "('DANN', 0.3, 150, 64)": 1,
+      "('DANN', 0.1, 150, 64)": 1,
+      "('DANN', 0.03, 60, 64)": 1
+    },
+    "MLP": {
+      "('MLP', 0.0, 60, 64)": 4,
+      "('MLP', 0.0, 150, 128)": 4,
+      "('MLP', 0.0, 150, 64)": 3,
+      "('MLP', 0.0, 60, 128)": 2
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "cells": {
+    "fixed_0": {
+      "A": -0.00012,
+      "CI95": [
+        -0.00016,
+        -8e-05
+      ],
+      "cells_A_pos": "22/77",
+      "trigger_budget": 0.509,
+      "trigger_mae": 0.00117,
+      "ALL_mae": 0.00044,
+      "PER2_mae": 0.001
+    },
+    "fixed_0.2%": {
+      "A": -0.00016,
+      "CI95": [
+        -0.00028,
+        -4e-05
+      ],
+      "cells_A_pos": "32/77",
+      "trigger_budget": 0.507,
+      "trigger_mae": 0.00294,
+      "ALL_mae": 0.00204,
+      "PER2_mae": 0.00259
+    },
+    "fixed_0.4%": {
+      "A": -0.00026,
+      "CI95": [
+        -0.00052,
+        -1e-05
+      ],
+      "cells_A_pos": "34/77",
+      "trigger_budget": 0.501,
+      "trigger_mae": 0.0047,
+      "ALL_mae": 0.00341,
+      "PER2_mae": 0.0041
+    },
+    "fixed_1.25%": {
+      "A": -0.00026,
+      "CI95": [
+        -0.00052,
+        2e-05
+      ],
+      "cells_A_pos": "32/77",
+      "trigger_budget": 0.498,
+      "trigger_mae": 0.00823,
+      "ALL_mae": 0.00721,
+      "PER2_mae": 0.008
+    },
+    "random_0": {
+      "A": -0.0002,
+      "CI95": [
+        -0.00026,
+        -0.00015
+      ],
+      "cells_A_pos": "18/77",
+      "trigger_budget": 0.503,
+      "trigger_mae": 0.00147,
+      "ALL_mae": 0.00046,
+      "PER2_mae": 0.00117
+    },
+    "random_0.2%": {
+      "A": -0.0003,
+      "CI95": [
+        -0.00043,
+        -0.00016
+      ],
+      "cells_A_pos": "27/77",
+      "trigger_budget": 0.498,
+      "trigger_mae": 0.00328,
+      "ALL_mae": 0.00213,
+      "PER2_mae": 0.00282
+    },
+    "random_0.4%": {
+      "A": -0.00066,
+      "CI95": [
+        -0.00093,
+        -0.00038
+      ],
+      "cells_A_pos": "24/77",
+      "trigger_budget": 0.495,
+      "trigger_mae": 0.00564,
+      "ALL_mae": 0.00366,
+      "PER2_mae": 0.00467
+    },
+    "random_1.25%": {
+      "A": -0.00364,
+      "CI95": [
+        -0.0054,
+        -0.00192
+      ],
+      "cells_A_pos": "21/77",
+      "trigger_budget": 0.497,
+      "trigger_mae": 0.01799,
+      "ALL_mae": 0.01001,
+      "PER2_mae": 0.01204
+    }
+  },
+  "H1_pass": false,
+  "H2_pass": true,
+  "H3_pass": true,
+  "LAW_CONFIRMED": false
+}

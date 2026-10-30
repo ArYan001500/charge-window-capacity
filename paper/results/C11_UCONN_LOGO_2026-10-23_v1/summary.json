@@ -1,0 +1,20 @@
+{
+  "n_rows": 12900,
+  "n_cells": 44,
+  "primary_mean_over_groups": {
+    "M0": 0.20593,
+    "MW_lin": 0.1012,
+    "MW_quad": 0.0819,
+    "P0": 0.04411,
+    "P1": 0.03101,
+    "P2": 0.02526
+  },
+  "K1_MW_lin_beats_M0": 10,
+  "K1_MW_quad_beats_M0": 11,
+  "K2_P2_beats_P1": 8,
+  "K3_cov25_below_full": 8,
+  "K4_spearman": {
+    "mean_boot_std": 0.5545454545454546,
+    "mean_feature_distance": 0.7545454545454545
+  }
+}

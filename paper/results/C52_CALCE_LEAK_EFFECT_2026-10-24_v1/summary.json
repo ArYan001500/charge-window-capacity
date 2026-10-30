@@ -1,0 +1,24 @@
+{
+  "window_only": {
+    "MAE_by_test_cell": {
+      "PL21": 0.0744,
+      "PL17": 0.0816
+    },
+    "mean": 0.078
+  },
+  "window+dq+duration (leaky)": {
+    "MAE_by_test_cell": {
+      "PL21": 0.0177,
+      "PL17": 0.0306
+    },
+    "mean": 0.0241
+  },
+  "dq_only (leaky)": {
+    "MAE_by_test_cell": {
+      "PL21": 0.0121,
+      "PL17": 0.028
+    },
+    "mean": 0.0201
+  },
+  "prior_last_reference_MAE": 0.012
+}

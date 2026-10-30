@@ -1,0 +1,131 @@
+{
+  "table": [
+    {
+      "policy": "FM_chronos2_thr50",
+      "mae": 0.3934,
+      "budget": 0.1169
+    },
+    {
+      "policy": "FM_chronos2_thr33",
+      "mae": 0.3934,
+      "budget": 0.1169
+    },
+    {
+      "policy": "FM_moirai2_thr50",
+      "mae": 0.3934,
+      "budget": 0.1169
+    },
+    {
+      "policy": "FM_moirai2_thr33",
+      "mae": 0.3934,
+      "budget": 0.1169
+    },
+    {
+      "policy": "PER3",
+      "mae": 0.106,
+      "budget": 0.3665
+    },
+    {
+      "policy": "FLUCT_thr33",
+      "mae": 0.265,
+      "budget": 0.3871
+    },
+    {
+      "policy": "INNOV_thr33",
+      "mae": 0.1053,
+      "budget": 0.4655
+    },
+    {
+      "policy": "FM_chronos2_hyb50",
+      "mae": 0.0999,
+      "budget": 0.4978
+    },
+    {
+      "policy": "FM_moirai2_hyb50",
+      "mae": 0.1001,
+      "budget": 0.5036
+    },
+    {
+      "policy": "FLUCT_thr50",
+      "mae": 0.1603,
+      "budget": 0.5098
+    },
+    {
+      "policy": "PER2",
+      "mae": 0.1023,
+      "budget": 0.538
+    },
+    {
+      "policy": "FLUCT_hyb50",
+      "mae": 0.0919,
+      "budget": 0.5383
+    },
+    {
+      "policy": "SELECTED33",
+      "mae": 0.1022,
+      "budget": 0.5494
+    },
+    {
+      "policy": "VAR_thr50",
+      "mae": 0.1022,
+      "budget": 0.5494
+    },
+    {
+      "policy": "VAR_thr33",
+      "mae": 0.1022,
+      "budget": 0.5494
+    },
+    {
+      "policy": "INNOV_hyb50",
+      "mae": 0.0867,
+      "budget": 0.5942
+    },
+    {
+      "policy": "SELECTED50",
+      "mae": 0.0865,
+      "budget": 0.6137
+    },
+    {
+      "policy": "INNOV_thr50",
+      "mae": 0.0883,
+      "budget": 0.6367
+    },
+    {
+      "policy": "VAR_hyb50",
+      "mae": 0.0958,
+      "budget": 0.6699
+    },
+    {
+      "policy": "ALL",
+      "mae": 0.0811,
+      "budget": 1.0
+    }
+  ],
+  "D1_SELECTED50_minus_PER2_CI95": [
+    -0.0216,
+    -0.0102
+  ],
+  "D1_SELECTED33_minus_PER3_CI95": [
+    -0.0059,
+    -0.0017
+  ],
+  "D1_pass": true,
+  "D2_best_FM": "FM_chronos2_hyb50",
+  "D2_best_simple": "INNOV_hyb50",
+  "D2_FM_minus_simple_CI95": [
+    0.0071,
+    0.0197
+  ],
+  "D3_best_le60": "INNOV_hyb50",
+  "D3_ratio_to_ALL": 1.069,
+  "D3_pass": false,
+  "selected_counts": {
+    "SELECTED33": {
+      "VAR_thr": 13
+    },
+    "SELECTED50": {
+      "INNOV_hyb": 12,
+      "FLUCT_hyb": 1
+    }
+  }
+}

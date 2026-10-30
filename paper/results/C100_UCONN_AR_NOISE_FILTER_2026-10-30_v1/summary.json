@@ -1,0 +1,112 @@
+{
+  "sanity_locked_dev": {
+    "W": 7.094384812944554e-08,
+    "WR": 2.691392175790952e-08,
+    "R": 4.144840026754082e-11
+  },
+  "S100_rho0_vs_kf_bias_max": 4.163336342344337e-17,
+  "S100_kf_bias_vs_C91_max": 9.71445146547012e-17,
+  "S100_ref_vs_C91_max": 9.020562075079397e-17,
+  "S100_pass": true,
+  "T7": {
+    "ref_drift": 0.0496,
+    "kf_bias": 0.0459,
+    "bias_ar": 0.0461,
+    "ar_beats_ref_groups": 8,
+    "bias_beats_ref_groups": 6,
+    "ar_beats_bias_groups": 6,
+    "ci_ar_minus_bias": [
+      -0.0003,
+      0.0007
+    ],
+    "ci_ar_minus_ref": [
+      -0.0051,
+      -0.0015
+    ],
+    "selected_tau": {
+      "28.0": 10,
+      "0.5": 1
+    },
+    "selected_rho": {
+      "0.5": 5,
+      "0.75": 3,
+      "0.25": 2,
+      "0.0": 1
+    }
+  },
+  "T14": {
+    "ref_drift": 0.0611,
+    "kf_bias": 0.0538,
+    "bias_ar": 0.0539,
+    "ar_beats_ref_groups": 9,
+    "bias_beats_ref_groups": 9,
+    "ar_beats_bias_groups": 4,
+    "ci_ar_minus_bias": [
+      -0.0005,
+      0.0007
+    ],
+    "ci_ar_minus_ref": [
+      -0.0093,
+      -0.005
+    ],
+    "selected_tau": {
+      "28.0": 9,
+      "0.5": 2
+    },
+    "selected_rho": {
+      "0.5": 5,
+      "0.75": 2,
+      "0.0": 2,
+      "0.25": 2
+    }
+  },
+  "T28": {
+    "ref_drift": 0.08,
+    "kf_bias": 0.0608,
+    "bias_ar": 0.0592,
+    "ar_beats_ref_groups": 9,
+    "bias_beats_ref_groups": 9,
+    "ar_beats_bias_groups": 7,
+    "ci_ar_minus_bias": [
+      -0.0025,
+      -0.0006
+    ],
+    "ci_ar_minus_ref": [
+      -0.0243,
+      -0.0171
+    ],
+    "selected_tau": {
+      "28.0": 11
+    },
+    "selected_rho": {
+      "0.5": 7,
+      "0.75": 3,
+      "0.25": 1
+    }
+  },
+  "T56": {
+    "ref_drift": 0.1093,
+    "kf_bias": 0.0622,
+    "bias_ar": 0.0634,
+    "ar_beats_ref_groups": 9,
+    "bias_beats_ref_groups": 9,
+    "ar_beats_bias_groups": 3,
+    "ci_ar_minus_bias": [
+      0.0006,
+      0.002
+    ],
+    "ci_ar_minus_ref": [
+      -0.0496,
+      -0.042
+    ],
+    "selected_tau": {
+      "28.0": 9,
+      "0.5": 2
+    },
+    "selected_rho": {
+      "0.25": 7,
+      "0.0": 2,
+      "0.5": 2
+    }
+  }
+}

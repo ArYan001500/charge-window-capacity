@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated paper. Citation details will be added when the paper is published."
+title: "Reading lithium-ion battery capacity from 10-minute charging windows under unseen usage with a bias-aware soft sensor and shift-robust uncertainty"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Ashoori
+    given-names: Aryan
+    orcid: https://orcid.org/0009-0001-2226-3894
+repository-code: https://github.com/ArYan001500/charge-window-capacity
+license: MIT

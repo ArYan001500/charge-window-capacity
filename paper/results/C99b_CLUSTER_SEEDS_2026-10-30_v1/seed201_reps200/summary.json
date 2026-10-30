@@ -1,0 +1,58 @@
+{
+  "sanity_row_vs_C92_max": 1.1102230246251565e-16,
+  "sanity_pass": true,
+  "cluster": {
+    "HUST": {
+      "mean_cov": 0.907,
+      "min_cov": 0.871,
+      "min_cell_cov": 0.873,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.2217,
+      "mean_width_pct": 20.5
+    },
+    "KIT": {
+      "mean_cov": 0.98,
+      "min_cov": 0.851,
+      "min_cell_cov": 0.886,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.7776,
+      "mean_width_pct": 32.4
+    },
+    "UConn": {
+      "mean_cov": 0.987,
+      "min_cov": 0.935,
+      "min_cell_cov": 0.936,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.6041,
+      "mean_width_pct": 34.5
+    },
+    "PASS": true
+  },
+  "row_C92": {
+    "HUST": {
+      "mean_cov": 0.906,
+      "min_cov": 0.873,
+      "min_cell_cov": 0.877,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.2087,
+      "mean_width_pct": 19.3
+    },
+    "KIT": {
+      "mean_cov": 0.973,
+      "min_cov": 0.825,
+      "min_cell_cov": 0.857,
+      "groups_below_80": 0,
+      "mean_width_Ah": 0.8069,
+      "mean_width_pct": 33.6
+    },
+    "UConn": {
+      "mean_cov": 0.969,
+      "min_cov": 0.797,
+      "min_cell_cov": 0.801,
+      "groups_below_80": 1,
+      "mean_width_Ah": 0.6671,
+      "mean_width_pct": 38.0
+    },
+    "PASS": false
+  }
+}

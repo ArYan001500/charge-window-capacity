@@ -1,0 +1,161 @@
+{
+  "n_intervals": 2265,
+  "cells": 177,
+  "mean": {
+    "M1": 0.1634,
+    "M2": 0.156,
+    "M3": 0.131,
+    "M4": 0.1174,
+    "M5": 0.1091,
+    "M6": 0.0964,
+    "M7": 0.1234
+  },
+  "fast_groups": {
+    "6": {
+      "M1": 0.3094,
+      "M2": 0.2822,
+      "M3": 0.2304,
+      "M4": 0.2752,
+      "M5": 0.1873,
+      "M6": 0.141,
+      "M7": 0.2211
+    },
+    "7": {
+      "M1": 0.4031,
+      "M2": 0.385,
+      "M3": 0.5209,
+      "M4": 0.264,
+      "M5": 0.2601,
+      "M6": 0.219,
+      "M7": 0.238
+    },
+    "10": {
+      "M1": 0.2925,
+      "M2": 0.2737,
+      "M3": 0.2049,
+      "M4": 0.2052,
+      "M5": 0.2309,
+      "M6": 0.2205,
+      "M7": 0.2811
+    },
+    "11": {
+      "M1": 0.3501,
+      "M2": 0.3503,
+      "M3": 0.2262,
+      "M4": 0.2642,
+      "M5": 0.3004,
+      "M6": 0.2127,
+      "M7": 0.304
+    }
+  },
+  "formulas": {
+    "0": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv"
+    ],
+    "1": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv"
+    ],
+    "2": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv"
+    ],
+    "3": [
+      "prev_rate_d",
+      "ahd_dv",
+      "ahd_T",
+      "ahd",
+      "T"
+    ],
+    "4": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv",
+      "ahd_chg"
+    ],
+    "5": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv"
+    ],
+    "6": [
+      "prev_rate_d",
+      "prev_rate_ah_x_ahd",
+      "Q0",
+      "T",
+      "ahd_chg",
+      "ahd_T",
+      "ahd"
+    ],
+    "7": [
+      "prev_rate_d",
+      "Q0",
+      "ahd_chg",
+      "ahd_T",
+      "T",
+      "ahd"
+    ],
+    "8": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv",
+      "ahd_chg"
+    ],
+    "9": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "ahd_dv",
+      "ahd_chg"
+    ],
+    "10": [
+      "prev_rate_d",
+      "ahd_dv",
+      "ahd_T",
+      "ahd",
+      "T",
+      "ahd_chg",
+      "Q0"
+    ],
+    "11": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "ahd_dv",
+      "T"
+    ],
+    "12": [
+      "prev_rate_d",
+      "ahd",
+      "ahd_T",
+      "T",
+      "Q0"
+    ]
+  },
+  "best": "M6",
+  "best_minus_M1_CI95": [
+    -0.0887,
+    -0.0465
+  ],
+  "K1_pass": true,
+  "K2_fast_improved": "4/4",
+  "group_wins_vs_M1": "13/13",
+  "K2_pass": true
+}

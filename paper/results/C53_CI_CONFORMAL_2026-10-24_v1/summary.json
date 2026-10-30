@@ -1,0 +1,77 @@
+{
+  "UConn": {
+    "MW_quad_minus_M0": {
+      "point": -0.124,
+      "CI95": [
+        -0.1283,
+        -0.1195
+      ]
+    },
+    "P2_minus_P1": {
+      "point": -0.0057,
+      "CI95": [
+        -0.0068,
+        -0.0049
+      ]
+    },
+    "conformal_90": {
+      "mean_coverage": 0.905,
+      "min_coverage": 0.686,
+      "mean_width_Ah": 0.4098,
+      "mean_coverage_acc25": 0.863,
+      "mean_width_acc25_Ah": 0.2174,
+      "groups_below_80pct": 2,
+      "n_groups": 11
+    }
+  },
+  "HUST": {
+    "MW_quad_minus_M0": {
+      "point": -0.0263,
+      "CI95": [
+        -0.0289,
+        -0.0238
+      ]
+    },
+    "P2_minus_P1": {
+      "point": -0.0007,
+      "CI95": [
+        -0.0008,
+        -0.0006
+      ]
+    },
+    "conformal_90": {
+      "mean_coverage": 0.9,
+      "min_coverage": 0.882,
+      "mean_width_Ah": 0.1919,
+      "mean_coverage_acc25": 0.9,
+      "mean_width_acc25_Ah": 0.2014,
+      "groups_below_80pct": 0,
+      "n_groups": 7
+    }
+  },
+  "KIT": {
+    "MW_quadT_minus_M0": {
+      "point": -0.1304,
+      "CI95": [
+        -0.1408,
+        -0.1192
+      ]
+    },
+    "P2_minus_P1": {
+      "point": -0.0277,
+      "CI95": [
+        -0.0343,
+        -0.0213
+      ]
+    },
+    "conformal_90": {
+      "mean_coverage": 0.838,
+      "min_coverage": 0.286,
+      "mean_width_Ah": 0.3521,
+      "mean_coverage_acc25": 0.825,
+      "mean_width_acc25_Ah": 0.2468,
+      "groups_below_80pct": 2,
+      "n_groups": 13
+    }
+  }
+}

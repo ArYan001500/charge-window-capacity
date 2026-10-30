@@ -1,0 +1,1 @@
+{"dataset": "UConn", "arch": "bi", "seed": 0, "device": "cuda", "n": 12900, "seconds": 172}

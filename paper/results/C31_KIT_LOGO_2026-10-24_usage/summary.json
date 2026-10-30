@@ -1,0 +1,23 @@
+{
+  "split": "usage",
+  "n_rows": 24027,
+  "n_cells": 180,
+  "n_groups": 13,
+  "primary_mean_over_groups": {
+    "M0": 0.23321,
+    "MW_lin": 0.1679,
+    "MW_quad": 0.14245,
+    "MW_quadT": 0.10279,
+    "P0": 0.16322,
+    "P1": 0.13551,
+    "P2": 0.10785
+  },
+  "K1_MW_quad_beats_M0": 13,
+  "K2_P2_beats_P1": 10,
+  "K3_cov25_below_full": 12,
+  "K4_spearman": {
+    "mean_boot_std": 0.1868131868131868,
+    "mean_feature_distance": -0.23076923076923078
+  },
+  "MW_quadT_beats_MW_quad": 11
+}

@@ -1,0 +1,70 @@
+{
+  "G1_slow_segments": {
+    "LOW": {
+      "ours_F0F1": 0.0174,
+      "guo": 0.0341,
+      "ours_minus_guo_CI95": [
+        -0.0195,
+        -0.0141
+      ],
+      "n": 1336
+    },
+    "MID": {
+      "ours_F0F1": 0.0759,
+      "guo": 0.0667,
+      "ours_minus_guo_CI95": [
+        0.0065,
+        0.012
+      ],
+      "n": 1320
+    },
+    "HIGH": {
+      "ours_F0F1": 0.0518,
+      "guo": 0.0593,
+      "ours_minus_guo_CI95": [
+        -0.0097,
+        -0.0051
+      ],
+      "n": 1336
+    }
+  },
+  "H1_pass_LOW": true,
+  "G2_S1_UConn": {
+    "ours": 0.0819,
+    "guo": 0.2772,
+    "shao_E": 0.1424,
+    "ours_minus_guo_CI95": [
+      -0.2083,
+      -0.1842
+    ],
+    "ours_minus_shao_CI95": [
+      -0.0634,
+      -0.0577
+    ],
+    "n": 12900
+  },
+  "G2_S1_KIT": {
+    "ours": 0.1028,
+    "guo": 0.2091,
+    "shao_E": 0.2373,
+    "ours_minus_guo_CI95": [
+      -0.1207,
+      -0.0937
+    ],
+    "ours_minus_shao_CI95": [
+      -0.1452,
+      -0.1237
+    ],
+    "n": 24027
+  },
+  "H2_pass": true,
+  "H3_pass": true,
+  "S2_leak_UConn": {
+    "SOC_interval_energy": 0.0023,
+    "fixed_segment_energy": 0.0121,
+    "pearson_SOC": 0.9998,
+    "pearson_fixed": -0.9937,
+    "n": 888
+  },
+  "H4_pass": true
+}

@@ -1,0 +1,103 @@
+{
+  "A_pooled": {
+    "HUST": {
+      "mean_cov": 0.9,
+      "min_cov": 0.882,
+      "groups_below_80": 0,
+      "n_groups": 7,
+      "mean_width_Ah": 0.1919
+    },
+    "KIT": {
+      "mean_cov": 0.838,
+      "min_cov": 0.286,
+      "groups_below_80": 2,
+      "n_groups": 13,
+      "mean_width_Ah": 0.3521
+    },
+    "UConn": {
+      "mean_cov": 0.905,
+      "min_cov": 0.686,
+      "groups_below_80": 2,
+      "n_groups": 11,
+      "mean_width_Ah": 0.4098
+    },
+    "PASS": false,
+    "avg_width_over_datasets": 0.3179
+  },
+  "B_groupmax": {
+    "HUST": {
+      "mean_cov": 0.914,
+      "min_cov": 0.891,
+      "groups_below_80": 0,
+      "n_groups": 7,
+      "mean_width_Ah": 0.2035
+    },
+    "KIT": {
+      "mean_cov": 0.971,
+      "min_cov": 0.862,
+      "groups_below_80": 0,
+      "n_groups": 13,
+      "mean_width_Ah": 0.7416
+    },
+    "UConn": {
+      "mean_cov": 0.972,
+      "min_cov": 0.896,
+      "groups_below_80": 0,
+      "n_groups": 11,
+      "mean_width_Ah": 0.7529
+    },
+    "PASS": true,
+    "avg_width_over_datasets": 0.566
+  },
+  "C_norm": {
+    "HUST": {
+      "mean_cov": 0.899,
+      "min_cov": 0.881,
+      "groups_below_80": 0,
+      "n_groups": 7,
+      "mean_width_Ah": 0.2026
+    },
+    "KIT": {
+      "mean_cov": 0.92,
+      "min_cov": 0.719,
+      "groups_below_80": 1,
+      "n_groups": 13,
+      "mean_width_Ah": 0.5448
+    },
+    "UConn": {
+      "mean_cov": 0.905,
+      "min_cov": 0.622,
+      "groups_below_80": 2,
+      "n_groups": 11,
+      "mean_width_Ah": 0.3832
+    },
+    "PASS": false,
+    "avg_width_over_datasets": 0.3769
+  },
+  "D_norm_groupmax": {
+    "HUST": {
+      "mean_cov": 0.917,
+      "min_cov": 0.89,
+      "groups_below_80": 0,
+      "n_groups": 7,
+      "mean_width_Ah": 0.2176
+    },
+    "KIT": {
+      "mean_cov": 0.973,
+      "min_cov": 0.9,
+      "groups_below_80": 0,
+      "n_groups": 13,
+      "mean_width_Ah": 0.7696
+    },
+    "UConn": {
+      "mean_cov": 0.975,
+      "min_cov": 0.886,
+      "groups_below_80": 0,
+      "n_groups": 11,
+      "mean_width_Ah": 0.5822
+    },
+    "PASS": true,
+    "avg_width_over_datasets": 0.5231
+  },
+  "primary": "D_norm_groupmax"
+}

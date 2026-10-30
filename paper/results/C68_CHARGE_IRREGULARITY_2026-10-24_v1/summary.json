@@ -1,0 +1,248 @@
+{
+  "M6": {
+    "mae": 0.0964,
+    "formulas": {
+      "0": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv"
+      ],
+      "1": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv"
+      ],
+      "2": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv"
+      ],
+      "3": [
+        "prev_rate_d",
+        "ahd_dv",
+        "ahd_T",
+        "ahd",
+        "T"
+      ],
+      "4": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv",
+        "ahd_chg"
+      ],
+      "5": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv"
+      ],
+      "6": [
+        "prev_rate_d",
+        "prev_rate_ah_x_ahd",
+        "Q0",
+        "T",
+        "ahd_chg",
+        "ahd_T",
+        "ahd"
+      ],
+      "7": [
+        "prev_rate_d",
+        "Q0",
+        "ahd_chg",
+        "ahd_T",
+        "T",
+        "ahd"
+      ],
+      "8": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv",
+        "ahd_chg"
+      ],
+      "9": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "ahd_dv",
+        "ahd_chg"
+      ],
+      "10": [
+        "prev_rate_d",
+        "ahd_dv",
+        "ahd_T",
+        "ahd",
+        "T",
+        "ahd_chg",
+        "Q0"
+      ],
+      "11": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "ahd_dv",
+        "T"
+      ],
+      "12": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "Q0"
+      ]
+    }
+  },
+  "M6_irr": {
+    "mae": 0.0965,
+    "formulas": {
+      "0": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "sd_vpre"
+      ],
+      "1": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "sd_vpre"
+      ],
+      "2": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "sd_vpre"
+      ],
+      "3": [
+        "prev_rate_d",
+        "ahd_dv",
+        "ahd_T",
+        "ahd",
+        "T"
+      ],
+      "4": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "sd_vpre",
+        "Q0"
+      ],
+      "5": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "sd_vpre",
+        "T"
+      ],
+      "6": [
+        "prev_rate_d",
+        "prev_rate_ah_x_ahd",
+        "Q0",
+        "sd_vpre",
+        "ahd_chg",
+        "ahd_T",
+        "T",
+        "ahd"
+      ],
+      "7": [
+        "prev_rate_d",
+        "Q0",
+        "ahd_chg",
+        "ahd_T",
+        "T",
+        "ahd"
+      ],
+      "8": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "sd_vpre",
+        "T"
+      ],
+      "9": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "sd_vpre",
+        "T"
+      ],
+      "10": [
+        "prev_rate_d",
+        "ahd_dv",
+        "ahd_T",
+        "ahd",
+        "T",
+        "ahd_chg",
+        "Q0"
+      ],
+      "11": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "ahd_dv",
+        "T"
+      ],
+      "12": [
+        "prev_rate_d",
+        "ahd",
+        "ahd_T",
+        "T",
+        "Q0",
+        "sd_dur"
+      ]
+    }
+  },
+  "diff_CI95": [
+    -0.0002,
+    0.0004
+  ],
+  "folds_with_irregularity_term": "9/13",
+  "K_pass": false,
+  "irregularity_spread": {
+    "sd_vpre": {
+      "count": 2265.0,
+      "mean": 0.137,
+      "std": 0.077,
+      "min": 0.043,
+      "25%": 0.073,
+      "50%": 0.105,
+      "75%": 0.195,
+      "max": 0.447
+    },
+    "sd_dur": {
+      "count": 2265.0,
+      "mean": 0.27,
+      "std": 0.156,
+      "min": 0.009,
+      "25%": 0.175,
+      "50%": 0.274,
+      "75%": 0.36,
+      "max": 0.85
+    },
+    "cv_gap": {
+      "count": 2265.0,
+      "mean": 0.475,
+      "std": 0.453,
+      "min": 0.142,
+      "25%": 0.246,
+      "50%": 0.33,
+      "75%": 0.491,
+      "max": 5.033
+    }
+  }
+}
