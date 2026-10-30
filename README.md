@@ -56,7 +56,7 @@ download these files in a browser and place them as shown. Every file is checked
 
 The KIT logs are unpacked by the runner (7-Zip or `py7zr`; the 30-s files only, 240 cells). The raw CALCE files store
 MATLAB tables, so the CALCE illustration (Fig. 2a, b) needs MATLAB for one export step (`matlab/export_calce_numeric.m`);
-without MATLAB the `full` tier skips it. `paper/` holds the result files behind every figure, including the held-out
+without MATLAB the `full` tier skips it. The `main` tier redraws Figures 1, 3, 4, 6 and 7; Figures 2 and 5 need results of the `full` tier. `paper/` holds the result files behind every figure, including the held-out
 predictions, and the paper tier draws all figures from them.
 
 ## How the code maps to the paper

@@ -84,11 +84,16 @@ def check_against_paper(steps, root, tol):
     return failed
 
 
-def figures(root, out):
+FIGURES = ["datasets", "leakage", "overview", "transfer", "competitors", "fusion", "intervals"]
+
+
+def figures(root, out, numbers=range(1, 8)):
     out.mkdir(parents=True, exist_ok=True)
     env = dict(_env(), CHARGEWIN_ROOT=str(root), CHARGEWIN_FIGURES=str(out), MPLBACKEND="Agg",
                PYTHONPATH=str(PKG / "figures"))
-    for n, name in enumerate(["datasets", "leakage", "overview", "transfer", "competitors", "fusion", "intervals"], 1):
+    for n, name in enumerate(FIGURES, 1):
+        if n not in numbers:
+            continue
         subprocess.run([sys.executable, "-B", str(PKG / "figures" / f"make_fig_{name}.py")], cwd=out, env=env,
                        check=True, stdout=subprocess.DEVNULL)
         shutil.copyfile(out / f"Figure_{name}.pdf", out / f"Figure_{n}.pdf")
@@ -138,10 +143,12 @@ def run(tier, data_dir, out_dir, offline=False):
                 shutil.copytree(PAPER / rel, out_dir / rel)
     for s in steps:
         run_step(s, out_dir, log)
-    if tier == "full":
-        calce(out_dir, log)
-    failed = check_against_paper(steps, out_dir, TOL)
-    figures(out_dir, out_dir / "figures")
+    extra = calce(out_dir, log) if tier == "full" else []
+    failed = check_against_paper(steps + extra, out_dir, TOL)
+    if tier == "main":
+        figures(out_dir, out_dir / "figures", [1, 3, 4, 6, 7])
+    else:
+        figures(out_dir, out_dir / "figures", range(1, 8) if extra else [1, 3, 4, 5, 6, 7])
     if failed:
         for name, problems in failed:
             print(f"FAIL {name}: " + "; ".join(problems), flush=True)
@@ -156,8 +163,8 @@ def calce(root, log):
     if not (num / "PL21_numeric.mat").exists():
         matlab = shutil.which("matlab")
         if not matlab:
-            print("skip CALCE illustration (needs MATLAB for the numeric export of the raw files)", flush=True)
-            return
+            print("skip CALCE illustration and Figure 2 (needs MATLAB for the numeric export of the raw files)", flush=True)
+            return []
         src = root / "tables" / "calce_raw"
         import zipfile
         src.mkdir(parents=True, exist_ok=True)
@@ -168,10 +175,13 @@ def calce(root, log):
         num.mkdir(parents=True, exist_ok=True)
         cmd = f"addpath('{(REPO / 'matlab').as_posix()}'); export_calce_numeric('{src.as_posix()}', '{num.as_posix()}')"
         subprocess.run([matlab, "-batch", cmd], check=True)
-    for s in [dict(id=f"C06w{w}", script="c06_calce_genuine_partial.py",
+    steps = [dict(id="C06a", script="c06a_calce_tables.py", args=["."], out="tables/calce_numeric", tier="full")] + [
+              dict(id=f"C06w{w}", script="c06_calce_genuine_partial.py",
                    args=[".", r(f"C06_CALCE_GENUINE_PARTIAL_2026-10-22_w{w}"), str(w)],
                    out=r(f"C06_CALCE_GENUINE_PARTIAL_2026-10-22_w{w}"), tier="full") for w in (600, 1800)] + [
               dict(id="C52", script="c52_calce_leak_effect.py", args=[".", r("C52_CALCE_LEAK_EFFECT_2026-10-24_v1")],
                    out=r("C52_CALCE_LEAK_EFFECT_2026-10-24_v1"), tier="full"),
-              dict(id="C83", script="c83_figure_data.py", args=["."], out=r("C83_FIGURE_DATA_2026-10-29"), tier="full")]:
+              dict(id="C83", script="c83_figure_data.py", args=["."], out=r("C83_FIGURE_DATA_2026-10-29"), tier="full")]
+    for s in steps:
         run_step(s, root, log)
+    return steps

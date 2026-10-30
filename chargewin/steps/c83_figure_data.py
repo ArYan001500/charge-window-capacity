@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(sys.argv[1]); OUT = ROOT / "results/C83_FIGURE_DATA_2026-10-29"
+OUT.mkdir(parents=True, exist_ok=True)
 H22 = ROOT / "tables/calce_numeric"
 s = pd.read_csv(ROOT / "results/C06_CALCE_GENUINE_PARTIAL_2026-10-22_w1800/scored_DEV.csv")
 steps = pd.read_csv(H22 / "step_runs_offline_provenance.csv")[["run_uid", "Qc_counter_increment_Ah", "duration_observed_s"]]
